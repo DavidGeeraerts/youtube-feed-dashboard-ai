@@ -14,6 +14,7 @@ permissions:
   pages: write
   id-token: write
 
+# Queue overlapping runs so two jobs cannot push feed data at the same time.
 concurrency:
   group: youtube-dashboard
   cancel-in-progress: false
@@ -24,36 +25,40 @@ jobs:
     timeout-minutes: 20
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
       - name: Test feed parser
-        run: python -m unittest discover -s tests -v
+        run: |
+          python -m unittest discover -s tests -v
+          bash tests/test_publish_feed_data.sh
+
+      - name: Use the latest branch tip
+        run: |
+          git fetch origin "${GITHUB_REF_NAME}"
+          git checkout -B "${GITHUB_REF_NAME}" "origin/${GITHUB_REF_NAME}"
 
       - name: Fetch YouTube feeds
         run: python scripts/fetch_feeds.py
 
       - name: Commit feed data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/data
-          if git diff --staged --quiet; then
-            echo "No data changes to commit."
-          else
-            git commit -m "Update YouTube feed data"
-            git push origin "HEAD:${GITHUB_REF_NAME}"
-          fi
+        id: feed
+        run: bash scripts/publish_feed_data.sh "${GITHUB_REF_NAME}"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
+        with:
+          build_revision: ${{ steps.feed.outputs.sha }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
