@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-09",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "BTtyguoPvBU",
+      "title": "How One Founder Manages 20 AI Coding Agents at Once - Ryan Carson, Untangle",
+      "url": "https://www.youtube.com/watch?v=BTtyguoPvBU",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T18:00:27+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/BTtyguoPvBU/hqdefault.jpg"
+    },
+    {
+      "id": "PWoc_SfcsAQ",
+      "title": "Is This the End of NVIDIA's Memory Chip (NCM)",
+      "url": "https://www.youtube.com/watch?v=PWoc_SfcsAQ",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-09T15:30:26+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/PWoc_SfcsAQ/hqdefault.jpg"
+    },
+    {
+      "id": "GpZ5T51jE4U",
+      "title": "Spec-Driven Development vs. Waterfall: What's Different for AI Coding?",
+      "url": "https://www.youtube.com/watch?v=GpZ5T51jE4U",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-09T12:00:33+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/GpZ5T51jE4U/hqdefault.jpg"
+    },
+    {
+      "id": "Gs4Ho0ub3a4",
+      "title": "AI Engineer NYC 2026 Closing Remarks - Ksenia Se, Turing Post & swyx, AI Engineer",
+      "url": "https://www.youtube.com/watch?v=Gs4Ho0ub3a4",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T09:00:16+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/Gs4Ho0ub3a4/hqdefault.jpg"
+    },
+    {
+      "id": "1NWnSwCB4NM",
+      "title": "Your KV Cache Can Spot Attacks on Your AI Agents - Ari Azarafrooz, Intrinsec AI",
+      "url": "https://www.youtube.com/watch?v=1NWnSwCB4NM",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T08:00:38+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/1NWnSwCB4NM/hqdefault.jpg"
+    },
+    {
+      "id": "LF8V0RGJU0I",
+      "title": "Will AI Agents Pretend to Be Human to Get Past a Check? - Maty Bohacek, Stanford",
+      "url": "https://www.youtube.com/watch?v=LF8V0RGJU0I",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T08:00:35+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/LF8V0RGJU0I/hqdefault.jpg"
+    },
+    {
+      "id": "WWIFiQi9U4w",
+      "title": "The One Thing Every AI Agent Framework Agrees On - Mislav Ivanda, Daytona",
+      "url": "https://www.youtube.com/watch?v=WWIFiQi9U4w",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T08:00:27+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/WWIFiQi9U4w/hqdefault.jpg"
+    },
+    {
+      "id": "KdG9OSOtJOA",
+      "title": "Why No One Agrees on What Their AI Tokens Cost - Pratyusha Duvvuri, Cisco",
+      "url": "https://www.youtube.com/watch?v=KdG9OSOtJOA",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T08:00:26+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/KdG9OSOtJOA/hqdefault.jpg"
+    },
+    {
+      "id": "3nDMYV-QHLs",
+      "title": "Training Your Own Agent Models With RL Is Now Practical - Jason Mancuso, Modal",
+      "url": "https://www.youtube.com/watch?v=3nDMYV-QHLs",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T08:00:25+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/3nDMYV-QHLs/hqdefault.jpg"
+    },
+    {
+      "id": "dznCt8xPW7o",
+      "title": "Right Answer, Wrong Reasons: AI Forecasts Costco - Hassan El Mghari & Omar El Mghari, Together AI",
+      "url": "https://www.youtube.com/watch?v=dznCt8xPW7o",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T08:00:21+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/dznCt8xPW7o/hqdefault.jpg"
+    },
+    {
+      "id": "nKjPBAw_N_0",
+      "title": "How to Build a Software Factory That Improves Itself - Zach Lloyd, Warp",
+      "url": "https://www.youtube.com/watch?v=nKjPBAw_N_0",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T08:00:17+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/nKjPBAw_N_0/hqdefault.jpg"
+    },
+    {
+      "id": "Enn9dVrRXAo",
+      "title": "Stop Doing Agent Archaeology on Your Team's Code - Richard Feldman, Delta",
+      "url": "https://www.youtube.com/watch?v=Enn9dVrRXAo",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T08:00:16+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/Enn9dVrRXAo/hqdefault.jpg"
+    },
+    {
+      "id": "YV1x6gCdgQA",
+      "title": "Teach Your AI Agent to Build Products Everyone Can Use - Jemima Abu, CAIS",
+      "url": "https://www.youtube.com/watch?v=YV1x6gCdgQA",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T08:00:12+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/YV1x6gCdgQA/hqdefault.jpg"
+    },
+    {
+      "id": "SE6POOEjh4I",
+      "title": "Can AI Agents Beat Wall Street at Predicting Earnings? - Ashwin Paranjape, Samaya AI",
+      "url": "https://www.youtube.com/watch?v=SE6POOEjh4I",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T08:00:11+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/SE6POOEjh4I/hqdefault.jpg"
+    },
+    {
+      "id": "Xw9utONfhIY",
+      "title": "What Your Coding Agent Can't See in the Code - Tom Moor, Linear",
+      "url": "https://www.youtube.com/watch?v=Xw9utONfhIY",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T08:00:03+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/Xw9utONfhIY/hqdefault.jpg"
+    }
+  ]
+}

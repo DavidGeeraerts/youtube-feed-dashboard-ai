@@ -1,0 +1,25 @@
+<!-- Dark skin. main.css is Catppuccin Latte; this file overrides it when active. -->
+<meta name="color-scheme" content="light dark">
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/dark.css' | relative_url }}"
+  id="dark-theme"
+  media="(prefers-color-scheme: dark)"
+>
+<script>
+  (function () {
+    var mode = "system";
+    try {
+      mode = localStorage.getItem("yt-feed-theme") || "system";
+    } catch (error) {}
+    var link = document.getElementById("dark-theme");
+    if (link) {
+      if (mode === "dark") link.media = "all";
+      else if (mode === "light") link.media = "not all";
+      else link.media = "(prefers-color-scheme: dark)";
+    }
+    var root = document.documentElement;
+    root.style.colorScheme = mode === "dark" ? "dark" : mode === "light" ? "light" : "light dark";
+    root.setAttribute("data-theme", mode);
+  })();
+</script>

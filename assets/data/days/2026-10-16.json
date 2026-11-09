@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-16",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "bybSJb-ZAwc",
+      "title": "How I Make Money with Local AI Agents | Using Free Intelligence to Make Money",
+      "url": "https://www.youtube.com/watch?v=bybSJb-ZAwc",
+      "channel": "0xSero",
+      "channel_id": "UCeNLqAes-kUMjWksPA6d-BA",
+      "published": "2026-10-16T22:19:28+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/bybSJb-ZAwc/hqdefault.jpg"
+    },
+    {
+      "id": "HDdbU10r7Js",
+      "title": "State of Agentic Coding #11 with Geoff, Armin, and Ben",
+      "url": "https://www.youtube.com/watch?v=HDdbU10r7Js",
+      "channel": "Armin Ronacher",
+      "channel_id": "UC-mexo-76-J1MlQM8NkWCYw",
+      "published": "2026-10-16T11:00:15+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/HDdbU10r7Js/hqdefault.jpg"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-09",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "XqnYqTKInWI",
+      "title": "How I automate my research with AI Agents | Browser Use & Local AI",
+      "url": "https://www.youtube.com/watch?v=XqnYqTKInWI",
+      "channel": "0xSero",
+      "channel_id": "UCeNLqAes-kUMjWksPA6d-BA",
+      "published": "2026-10-09T18:34:37+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/XqnYqTKInWI/hqdefault.jpg"
+    },
+    {
+      "id": "FxD69bH10WU",
+      "title": "I Used Claude Code for a Year: 138 Billion Tokens Later",
+      "url": "https://www.youtube.com/watch?v=FxD69bH10WU",
+      "channel": "0xSero",
+      "channel_id": "UCeNLqAes-kUMjWksPA6d-BA",
+      "published": "2026-10-09T11:42:59+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/FxD69bH10WU/hqdefault.jpg"
+    }
+  ]
+}

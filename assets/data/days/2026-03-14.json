@@ -1,0 +1,42 @@
+{
+  "date": "2026-03-14",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "emCELbzi0LY",
+      "title": "Pi Day: AMA with Pi's Creator + Talks & Extensions Deep Dive",
+      "url": "https://www.youtube.com/watch?v=emCELbzi0LY",
+      "channel": "Armin Ronacher",
+      "channel_id": "UC-mexo-76-J1MlQM8NkWCYw",
+      "published": "2026-03-15T06:05:17+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/emCELbzi0LY/hqdefault.jpg"
+    },
+    {
+      "id": "cQ0J3g6jRHc",
+      "title": "Pi Day: AMA with Pi's Creator + Talks & Extensions Deep Dive",
+      "url": "https://www.youtube.com/watch?v=cQ0J3g6jRHc",
+      "channel": "Armin Ronacher",
+      "channel_id": "UC-mexo-76-J1MlQM8NkWCYw",
+      "published": "2026-03-14T18:24:38+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/cQ0J3g6jRHc/hqdefault.jpg"
+    },
+    {
+      "id": "0RLIlNWv1xo",
+      "title": "Pi Day: AMA with Pi's Creator + Talks & Extensions Deep Dive",
+      "url": "https://www.youtube.com/watch?v=0RLIlNWv1xo",
+      "channel": "Armin Ronacher",
+      "channel_id": "UC-mexo-76-J1MlQM8NkWCYw",
+      "published": "2026-03-14T18:05:23+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/0RLIlNWv1xo/hqdefault.jpg"
+    },
+    {
+      "id": "R_JSATvB4GQ",
+      "title": "Armin Ronacher Live Stream",
+      "url": "https://www.youtube.com/watch?v=R_JSATvB4GQ",
+      "channel": "Armin Ronacher",
+      "channel_id": "UC-mexo-76-J1MlQM8NkWCYw",
+      "published": "2026-03-14T17:54:57+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/R_JSATvB4GQ/hqdefault.jpg"
+    }
+  ]
+}

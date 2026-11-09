@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-06",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "nkb4mfa3S0A",
+      "title": "I Run Full DeepSeek v4.1 Flash on a 12GB GPU",
+      "url": "https://www.youtube.com/watch?v=nkb4mfa3S0A",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-06T15:30:08+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/nkb4mfa3S0A/hqdefault.jpg"
+    },
+    {
+      "id": "dgJTsBdvgkg",
+      "title": "State of Agentic Coding #12 with Armin and Ben",
+      "url": "https://www.youtube.com/watch?v=dgJTsBdvgkg",
+      "channel": "Armin Ronacher",
+      "channel_id": "UC-mexo-76-J1MlQM8NkWCYw",
+      "published": "2026-11-06T11:00:39+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/dgJTsBdvgkg/hqdefault.jpg"
+    },
+    {
+      "id": "x_5JijpzprU",
+      "title": "AI fixes AI in MIT study, Mistral's open model & Google Genie 4",
+      "url": "https://www.youtube.com/watch?v=x_5JijpzprU",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-06T09:30:07+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/x_5JijpzprU/hqdefault.jpg"
+    }
+  ]
+}

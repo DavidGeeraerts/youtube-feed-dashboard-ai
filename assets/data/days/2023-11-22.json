@@ -1,0 +1,15 @@
+{
+  "date": "2023-11-22",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "zjkBMFhNj_g",
+      "title": "[1hr Talk] Intro to Large Language Models",
+      "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
+      "channel": "Andrej Karpathy",
+      "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+      "published": "2023-11-23T02:27:48+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/zjkBMFhNj_g/hqdefault.jpg"
+    }
+  ]
+}

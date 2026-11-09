@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-03",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "q-UerBrO_2k",
+      "title": "Are Local Models Finally Good Enough? Full Talk with AJ (@techfren)",
+      "url": "https://www.youtube.com/watch?v=q-UerBrO_2k",
+      "channel": "0xSero",
+      "channel_id": "UCeNLqAes-kUMjWksPA6d-BA",
+      "published": "2026-11-03T20:15:46+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/q-UerBrO_2k/hqdefault.jpg"
+    },
+    {
+      "id": "Z5Ad9HtuY2A",
+      "title": "How Uber manages AI spend",
+      "url": "https://www.youtube.com/shorts/Z5Ad9HtuY2A",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-11-03T17:00:20+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/Z5Ad9HtuY2A/hqdefault.jpg"
+    },
+    {
+      "id": "hwRu-ehkzCw",
+      "title": "Deepseek Just Drops a Claude Code Rival (Super Agent)",
+      "url": "https://www.youtube.com/watch?v=hwRu-ehkzCw",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-03T15:30:14+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/hwRu-ehkzCw/hqdefault.jpg"
+    },
+    {
+      "id": "jnP9AgtX0qo",
+      "title": "Can Your AI Use Sensitive Data Safely? 5 Capabilities You Need",
+      "url": "https://www.youtube.com/watch?v=jnP9AgtX0qo",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-03T12:00:36+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/jnP9AgtX0qo/hqdefault.jpg"
+    },
+    {
+      "id": "xt-Wc2Nyf1M",
+      "title": "$200 for ChatGPT, Claude or Gemini? I Did the Math",
+      "url": "https://www.youtube.com/watch?v=xt-Wc2Nyf1M",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-03T10:30:14+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/xt-Wc2Nyf1M/hqdefault.jpg"
+    }
+  ]
+}

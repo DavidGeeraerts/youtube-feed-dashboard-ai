@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-04",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "tVAJc_nUgf0",
+      "title": "How Toyota Cut Ticket Processing From 60 min to 50 seconds",
+      "url": "https://www.youtube.com/watch?v=tVAJc_nUgf0",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-11-04T18:03:58+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/tVAJc_nUgf0/hqdefault.jpg"
+    },
+    {
+      "id": "oik3S_oDJc4",
+      "title": "Is OpenCode Go a scam? (Stop Using)",
+      "url": "https://www.youtube.com/watch?v=oik3S_oDJc4",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-04T15:30:01+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/oik3S_oDJc4/hqdefault.jpg"
+    },
+    {
+      "id": "c5n94VqXZAw",
+      "title": "Did the Knicks’ phishing test go too far? Plus, hackers pose as IT in Teams",
+      "url": "https://www.youtube.com/watch?v=c5n94VqXZAw",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-04T10:00:20+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/c5n94VqXZAw/hqdefault.jpg"
+    }
+  ]
+}

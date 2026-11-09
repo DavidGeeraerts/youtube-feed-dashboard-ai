@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-29",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "zebPEiQPLyQ",
+      "title": "The Context ft. BVNK",
+      "url": "https://www.youtube.com/watch?v=zebPEiQPLyQ",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-10-30T05:40:41+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/zebPEiQPLyQ/hqdefault.jpg"
+    },
+    {
+      "id": "JPHT9AvoPSA",
+      "title": "Every Way to Get 256 GB of VRAM for Local AI at Full Context",
+      "url": "https://www.youtube.com/watch?v=JPHT9AvoPSA",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-10-29T15:30:20+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/JPHT9AvoPSA/hqdefault.jpg"
+    },
+    {
+      "id": "mmns33BsBcY",
+      "title": "What Is Quantization? How AI Models Get Smaller & Faster",
+      "url": "https://www.youtube.com/watch?v=mmns33BsBcY",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-10-29T11:00:03+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/mmns33BsBcY/hqdefault.jpg"
+    }
+  ]
+}

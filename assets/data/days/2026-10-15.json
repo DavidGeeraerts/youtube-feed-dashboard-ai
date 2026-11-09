@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-15",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "J9sbZUy0Gww",
+      "title": "The Context ft. Discobox",
+      "url": "https://www.youtube.com/watch?v=J9sbZUy0Gww",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-10-16T06:18:44+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/J9sbZUy0Gww/hqdefault.jpg"
+    },
+    {
+      "id": "0PlOtbQIknk",
+      "title": "At Uber, 15% of PRs are from Minion",
+      "url": "https://www.youtube.com/shorts/0PlOtbQIknk",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-10-15T16:38:49+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/0PlOtbQIknk/hqdefault.jpg"
+    },
+    {
+      "id": "_35OxmSp5EM",
+      "title": "Teaching Kids Programming with Pi",
+      "url": "https://www.youtube.com/watch?v=_35OxmSp5EM",
+      "channel": "Armin Ronacher",
+      "channel_id": "UC-mexo-76-J1MlQM8NkWCYw",
+      "published": "2026-10-15T14:33:27+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/_35OxmSp5EM/hqdefault.jpg"
+    }
+  ]
+}

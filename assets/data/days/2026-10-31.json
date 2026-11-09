@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-31",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "mfgSBLGePuA",
+      "title": "When Security Patches Leak",
+      "url": "https://www.youtube.com/shorts/mfgSBLGePuA",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-10-31T16:00:22+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/mfgSBLGePuA/hqdefault.jpg"
+    },
+    {
+      "id": "0F63pTS8Gt0",
+      "title": "Avalon Just Beat Strata by 47% on AMD (9x Faster)",
+      "url": "https://www.youtube.com/watch?v=0F63pTS8Gt0",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-10-31T15:30:27+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/0F63pTS8Gt0/hqdefault.jpg"
+    }
+  ]
+}

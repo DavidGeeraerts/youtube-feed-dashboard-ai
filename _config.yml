@@ -1,0 +1,55 @@
+title: YouTube feed
+description: >-
+  Daily dashboard of new videos from selected YouTube channels.
+  Today and publish times use America/Los_Angeles.
+url: https://davidgeeraerts.github.io
+baseurl: /youtube-feed-dashboard-ai
+repository: DavidGeeraerts/youtube-feed-dashboard-ai
+timezone: America/Los_Angeles
+locale: en-US
+
+# Pinned so a future theme release does not change the build without a review.
+# Light skin. Dark mode loads assets/css/dark.scss (Catppuccin Mocha).
+remote_theme: mmistakes/minimal-mistakes@4.28.1
+minimal_mistakes_skin: catppuccin_latte
+plugins:
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+atom_feed:
+  hide: true
+search: false
+author_profile: false
+author:
+  name: David Geeraerts
+  url: https://davidgeeraerts.github.io/AI/
+
+footer:
+  links:
+    - label: Channel list
+      icon: fas fa-rss
+      url: https://davidgeeraerts.github.io/AI/chapters/07-resources.html#youtube-channels-xml-feeds
+    - label: GitHub
+      icon: fab fa-github
+      url: https://github.com/DavidGeeraerts/youtube-feed-dashboard-ai
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+      classes:
+        - wide
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - scripts
+  - tests
+  - vendor
+  - README.md
+  - LICENSE
+  - .github
+  - node_modules

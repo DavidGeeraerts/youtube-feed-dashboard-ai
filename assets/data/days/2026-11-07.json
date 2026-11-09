@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-07",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "BBdkmPFYnC0",
+      "title": "“Prototyping is a whole different game now”",
+      "url": "https://www.youtube.com/shorts/BBdkmPFYnC0",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-11-07T16:00:09+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/BBdkmPFYnC0/hqdefault.jpg"
+    },
+    {
+      "id": "F7qf5Mibgu4",
+      "title": "The Local AI Hardware Mistake Almost Everyone Makes",
+      "url": "https://www.youtube.com/watch?v=F7qf5Mibgu4",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-07T15:30:04+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/F7qf5Mibgu4/hqdefault.jpg"
+    }
+  ]
+}

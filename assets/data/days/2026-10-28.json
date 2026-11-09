@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-28",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "mQu0zN4IvSI",
+      "title": "Software engineering at Google & CS education with Titus Winters",
+      "url": "https://www.youtube.com/watch?v=mQu0zN4IvSI",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-10-28T18:41:17+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/mQu0zN4IvSI/hqdefault.jpg"
+    },
+    {
+      "id": "P0i3vYuJZH8",
+      "title": "Your $200 ChatGPT Plan is now worth less!",
+      "url": "https://www.youtube.com/watch?v=P0i3vYuJZH8",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-10-28T15:30:20+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/P0i3vYuJZH8/hqdefault.jpg"
+    },
+    {
+      "id": "cR_ne8yGcLU",
+      "title": "Getting Stateless MCP Into Production",
+      "url": "https://www.youtube.com/watch?v=cR_ne8yGcLU",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-10-28T15:06:48+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/cR_ne8yGcLU/hqdefault.jpg"
+    },
+    {
+      "id": "VoSQZBguB1A",
+      "title": "The PHP bug threatening the web. Plus, who's auditing AI?",
+      "url": "https://www.youtube.com/watch?v=VoSQZBguB1A",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-10-28T10:00:33+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/VoSQZBguB1A/hqdefault.jpg"
+    }
+  ]
+}

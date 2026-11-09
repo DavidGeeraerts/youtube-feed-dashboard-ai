@@ -1,0 +1,24 @@
+{
+  "date": "2022-08-16",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "sM9bozW295Q",
+      "title": "Stable diffusion dreams of tattoos",
+      "url": "https://www.youtube.com/watch?v=sM9bozW295Q",
+      "channel": "Andrej Karpathy",
+      "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+      "published": "2022-08-16T23:02:58+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/sM9bozW295Q/hqdefault.jpg"
+    },
+    {
+      "id": "VMj-3S1tku0",
+      "title": "The spelled-out intro to neural networks and backpropagation: building micrograd",
+      "url": "https://www.youtube.com/watch?v=VMj-3S1tku0",
+      "channel": "Andrej Karpathy",
+      "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+      "published": "2022-08-16T22:44:26+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/VMj-3S1tku0/hqdefault.jpg"
+    }
+  ]
+}

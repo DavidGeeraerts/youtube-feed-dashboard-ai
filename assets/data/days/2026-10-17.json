@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-17",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "g_ZoRnfqRgk",
+      "title": "Running Qwen3.8-Next-Flash at home on a budget",
+      "url": "https://www.youtube.com/watch?v=g_ZoRnfqRgk",
+      "channel": "0xSero",
+      "channel_id": "UCeNLqAes-kUMjWksPA6d-BA",
+      "published": "2026-10-17T22:21:46+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/g_ZoRnfqRgk/hqdefault.jpg"
+    },
+    {
+      "id": "1GkTaxfD2Xg",
+      "title": "Offloading Human Tasks with DeepMind's Maarten Grootendorst",
+      "url": "https://www.youtube.com/watch?v=1GkTaxfD2Xg",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-10-17T15:52:28+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/1GkTaxfD2Xg/hqdefault.jpg"
+    }
+  ]
+}

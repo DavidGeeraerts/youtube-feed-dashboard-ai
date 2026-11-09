@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-19",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "WH5MXo75Lfc",
+      "title": "Codebases that improve themselves",
+      "url": "https://www.youtube.com/shorts/WH5MXo75Lfc",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-10-19T16:00:15+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/WH5MXo75Lfc/hqdefault.jpg"
+    },
+    {
+      "id": "kwKVe27xnw4",
+      "title": "Build Your Own Open-Source Claude Code With Local LLMs - Daniel Oh, Red Hat",
+      "url": "https://www.youtube.com/watch?v=kwKVe27xnw4",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-10-19T14:00:10+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/kwKVe27xnw4/hqdefault.jpg"
+    },
+    {
+      "id": "a7PuFJzgwGg",
+      "title": "How to Prove Your AI Agent Is Actually Worth It - Inês Bolaños, PagerDuty",
+      "url": "https://www.youtube.com/watch?v=a7PuFJzgwGg",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-10-19T14:00:09+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/a7PuFJzgwGg/hqdefault.jpg"
+    }
+  ]
+}

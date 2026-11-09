@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-23",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "eB9I4Ixx2wc",
+      "title": "Live from AGNTCon + MCPCon NA Day 2, Anthropic, DeepMind, AWS, Entire, O’Reilly & More",
+      "url": "https://www.youtube.com/watch?v=eB9I4Ixx2wc",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-10-23T21:58:25+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/eB9I4Ixx2wc/hqdefault.jpg"
+    },
+    {
+      "id": "lYpWiV9SwC4",
+      "title": "You can't control everything in resilient systems",
+      "url": "https://www.youtube.com/shorts/lYpWiV9SwC4",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-10-23T15:30:10+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/lYpWiV9SwC4/hqdefault.jpg"
+    }
+  ]
+}

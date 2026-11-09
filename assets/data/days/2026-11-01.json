@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-01",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "mED-boddeWI",
+      "title": "You Don't Need an Expensive GPU Anymore (Strata 100 tok/s)",
+      "url": "https://www.youtube.com/watch?v=mED-boddeWI",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-01T15:30:15+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/mED-boddeWI/hqdefault.jpg"
+    },
+    {
+      "id": "QUZ4KEDxhCM",
+      "title": "What Is torch.compile? Dynamo, PyTorch & Faster AI Models Explained",
+      "url": "https://www.youtube.com/watch?v=QUZ4KEDxhCM",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-01T12:00:15+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/QUZ4KEDxhCM/hqdefault.jpg"
+    }
+  ]
+}
