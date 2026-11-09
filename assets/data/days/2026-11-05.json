@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-05",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "Qv17qmKhL78",
+      "title": "The Context ft. Obot AI",
+      "url": "https://www.youtube.com/watch?v=Qv17qmKhL78",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-11-06T06:53:53+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/Qv17qmKhL78/hqdefault.jpg"
+    },
+    {
+      "id": "zHmcVsWDIDI",
+      "title": "19 Nov - MCP Dev Summit Nairobi 2026 Livestream",
+      "url": "https://www.youtube.com/watch?v=zHmcVsWDIDI",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-11-06T04:20:30+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/zHmcVsWDIDI/hqdefault.jpg"
+    },
+    {
+      "id": "ZW1Uws11azE",
+      "title": "20 Nov - MCP Dev Summit Nairobi 2026 Livestream",
+      "url": "https://www.youtube.com/watch?v=ZW1Uws11azE",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-11-06T04:18:12+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/ZW1Uws11azE/hqdefault.jpg"
+    },
+    {
+      "id": "if1rT16rFW8",
+      "title": "Autonomous AI in Action: Highlights from AGNTCon + MCPCon NA 2026",
+      "url": "https://www.youtube.com/watch?v=if1rT16rFW8",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-11-06T02:44:41+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/if1rT16rFW8/hqdefault.jpg"
+    },
+    {
+      "id": "k28DlDFGm24",
+      "title": "The hidden cost of layoffs",
+      "url": "https://www.youtube.com/shorts/k28DlDFGm24",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-11-05T16:00:43+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/k28DlDFGm24/hqdefault.jpg"
+    },
+    {
+      "id": "x6WqD4qHxSc",
+      "title": "Scaling Slack and GitHub with Maude Lemaire",
+      "url": "https://www.youtube.com/watch?v=x6WqD4qHxSc",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-11-05T15:55:04+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/x6WqD4qHxSc/hqdefault.jpg"
+    },
+    {
+      "id": "6UjDw-2s4ik",
+      "title": "Can a $22K Mac Studio Replace Claude Subscription? (512GB M5 Ultra)",
+      "url": "https://www.youtube.com/watch?v=6UjDw-2s4ik",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-05T15:30:29+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/6UjDw-2s4ik/hqdefault.jpg"
+    },
+    {
+      "id": "rXFV1ivDe6c",
+      "title": "Are Vector Databases Still Needed? RAG, AI Agents & Search",
+      "url": "https://www.youtube.com/watch?v=rXFV1ivDe6c",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-05T12:00:09+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/rXFV1ivDe6c/hqdefault.jpg"
+    }
+  ]
+}

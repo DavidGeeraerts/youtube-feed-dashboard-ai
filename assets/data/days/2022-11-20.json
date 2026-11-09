@@ -1,0 +1,15 @@
+{
+  "date": "2022-11-20",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "t3YJ5hKiMQ0",
+      "title": "Building makemore Part 5: Building a WaveNet",
+      "url": "https://www.youtube.com/watch?v=t3YJ5hKiMQ0",
+      "channel": "Andrej Karpathy",
+      "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+      "published": "2022-11-21T00:32:48+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/t3YJ5hKiMQ0/hqdefault.jpg"
+    }
+  ]
+}

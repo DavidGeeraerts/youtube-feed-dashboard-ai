@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-14",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "61yRuOMSfMc",
+      "title": "Local AI From First Principles: The Whole Stack in 24 Minutes",
+      "url": "https://www.youtube.com/watch?v=61yRuOMSfMc",
+      "channel": "0xSero",
+      "channel_id": "UCeNLqAes-kUMjWksPA6d-BA",
+      "published": "2026-10-14T17:43:40+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/61yRuOMSfMc/hqdefault.jpg"
+    },
+    {
+      "id": "MDUYSMJmi8A",
+      "title": "Uber’s AI infra, from the inside",
+      "url": "https://www.youtube.com/watch?v=MDUYSMJmi8A",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-10-14T16:57:55+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/MDUYSMJmi8A/hqdefault.jpg"
+    }
+  ]
+}

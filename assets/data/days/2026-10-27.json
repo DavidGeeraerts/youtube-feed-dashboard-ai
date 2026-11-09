@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-27",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "uE_qBWauKXw",
+      "title": "We Gave Away 2 DGX Sparks at Gannon University | Running AI Locally",
+      "url": "https://www.youtube.com/watch?v=uE_qBWauKXw",
+      "channel": "0xSero",
+      "channel_id": "UCeNLqAes-kUMjWksPA6d-BA",
+      "published": "2026-10-27T21:23:26+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/uE_qBWauKXw/hqdefault.jpg"
+    },
+    {
+      "id": "PHBtFsGE6HE",
+      "title": "Adding people to a late project doesn’t work",
+      "url": "https://www.youtube.com/shorts/PHBtFsGE6HE",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-10-27T17:00:33+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/PHBtFsGE6HE/hqdefault.jpg"
+    },
+    {
+      "id": "VIm73gaY_hM",
+      "title": "Your GPU Is Nerfed for Local AI (NVIDIA's Hidden Limit)",
+      "url": "https://www.youtube.com/watch?v=VIm73gaY_hM",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-10-27T15:40:52+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/VIm73gaY_hM/hqdefault.jpg"
+    },
+    {
+      "id": "5WlmyncEcNM",
+      "title": "Open Source Security in the Age of AI",
+      "url": "https://www.youtube.com/watch?v=5WlmyncEcNM",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-10-27T11:00:06+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/5WlmyncEcNM/hqdefault.jpg"
+    }
+  ]
+}

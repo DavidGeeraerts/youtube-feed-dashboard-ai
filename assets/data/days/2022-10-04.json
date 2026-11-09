@@ -1,0 +1,15 @@
+{
+  "date": "2022-10-04",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "P6sfmUTpUmc",
+      "title": "Building makemore Part 3: Activations & Gradients, BatchNorm",
+      "url": "https://www.youtube.com/watch?v=P6sfmUTpUmc",
+      "channel": "Andrej Karpathy",
+      "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+      "published": "2022-10-04T16:41:03+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/P6sfmUTpUmc/hqdefault.jpg"
+    }
+  ]
+}

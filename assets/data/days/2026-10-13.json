@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-13",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "DW4Vd1U250g",
+      "title": "What's New in Local AI: Anthropic fears the Worms, Codex Slowdown, and Muse",
+      "url": "https://www.youtube.com/watch?v=DW4Vd1U250g",
+      "channel": "0xSero",
+      "channel_id": "UCeNLqAes-kUMjWksPA6d-BA",
+      "published": "2026-10-13T17:17:28+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/DW4Vd1U250g/hqdefault.jpg"
+    },
+    {
+      "id": "19eqJQS1QfY",
+      "title": "\"The SLA is what you're going to get sued for on a breach\"",
+      "url": "https://www.youtube.com/shorts/19eqJQS1QfY",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-10-13T16:00:05+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/19eqJQS1QfY/hqdefault.jpg"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2022-09-12",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "TCH_1BHY58I",
+      "title": "Building makemore Part 2: MLP",
+      "url": "https://www.youtube.com/watch?v=TCH_1BHY58I",
+      "channel": "Andrej Karpathy",
+      "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+      "published": "2022-09-12T14:43:06+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/TCH_1BHY58I/hqdefault.jpg"
+    }
+  ]
+}

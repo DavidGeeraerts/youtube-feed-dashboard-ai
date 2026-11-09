@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-02",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "0mSe_2J5udw",
+      "title": "AI, Religion, and Crypto with Paul",
+      "url": "https://www.youtube.com/watch?v=0mSe_2J5udw",
+      "channel": "0xSero",
+      "channel_id": "UCeNLqAes-kUMjWksPA6d-BA",
+      "published": "2026-11-02T17:03:26+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/0mSe_2J5udw/hqdefault.jpg"
+    },
+    {
+      "id": "RdexB39ISjg",
+      "title": "Tuxee - the most convenient Linux for servers and agents.",
+      "url": "https://www.youtube.com/watch?v=RdexB39ISjg",
+      "channel": "Agent Zero",
+      "channel_id": "UCm4Sy7W36u_ZFOZWX9cd07w",
+      "published": "2026-11-02T15:31:36+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/RdexB39ISjg/hqdefault.jpg"
+    },
+    {
+      "id": "kTmUbRVsamo",
+      "title": "What’s the Best AI Model Your GPU Can Actually Run?16GB to 1TB  VRam",
+      "url": "https://www.youtube.com/watch?v=kTmUbRVsamo",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-02T15:30:29+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/kTmUbRVsamo/hqdefault.jpg"
+    },
+    {
+      "id": "kGbCNx4siEk",
+      "title": "Your Agent Doesn't Need to Be Always On",
+      "url": "https://www.youtube.com/watch?v=kGbCNx4siEk",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-11-02T15:00:08+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/kGbCNx4siEk/hqdefault.jpg"
+    },
+    {
+      "id": "EkdIZXDnRK8",
+      "title": "Context-Aware Coding: Give AI Agents the Right Context",
+      "url": "https://www.youtube.com/watch?v=EkdIZXDnRK8",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-02T12:00:35+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/EkdIZXDnRK8/hqdefault.jpg"
+    }
+  ]
+}

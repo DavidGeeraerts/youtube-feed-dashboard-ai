@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-30",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "hOVaubDnu5A",
+      "title": "AI Exposes Legacy Code",
+      "url": "https://www.youtube.com/shorts/hOVaubDnu5A",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-10-30T16:00:33+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/hOVaubDnu5A/hqdefault.jpg"
+    },
+    {
+      "id": "PfR4S3Zzdoo",
+      "title": "Bytes Is This The End of Token?",
+      "url": "https://www.youtube.com/watch?v=PfR4S3Zzdoo",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-10-30T15:30:06+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/PfR4S3Zzdoo/hqdefault.jpg"
+    },
+    {
+      "id": "b3WYldenFUM",
+      "title": "WebMCP vs CLI vs MCP",
+      "url": "https://www.youtube.com/watch?v=b3WYldenFUM",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-10-30T15:00:09+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/b3WYldenFUM/hqdefault.jpg"
+    },
+    {
+      "id": "K8NgeOuZmWU",
+      "title": "AI exposes a major web security flaw, plus a new kind of voice model",
+      "url": "https://www.youtube.com/watch?v=K8NgeOuZmWU",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-10-30T10:00:19+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/K8NgeOuZmWU/hqdefault.jpg"
+    }
+  ]
+}

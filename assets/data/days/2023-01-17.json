@@ -1,0 +1,15 @@
+{
+  "date": "2023-01-17",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "kCc8FmEb1nY",
+      "title": "Let's build GPT: from scratch, in code, spelled out.",
+      "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY",
+      "channel": "Andrej Karpathy",
+      "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+      "published": "2023-01-17T16:33:27+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/kCc8FmEb1nY/hqdefault.jpg"
+    }
+  ]
+}

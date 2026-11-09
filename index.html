@@ -1,0 +1,50 @@
+---
+layout: single
+title: Daily videos
+excerpt: New videos from selected YouTube channels. Today and publish times use America/Los_Angeles.
+author_profile: false
+classes:
+  - wide
+---
+
+<p class="page__lead">Selected YouTube feeds for agentic engineering. <strong>Today</strong> and every publish time on this page use <strong>America/Los_Angeles</strong>.</p>
+
+<div id="dashboard" data-baseurl="{{ site.baseurl }}" data-timezone="America/Los_Angeles">
+  <div class="dashboard-toolbar">
+    <div class="dashboard-nav" role="group" aria-label="Choose a day">
+      <button type="button" class="btn btn--primary" id="prev-day">← Yesterday</button>
+      <div class="dashboard-current">
+        <p id="day-kicker" class="dashboard-kicker">Today</p>
+        <h2 id="current-date">Loading…</h2>
+      </div>
+      <button type="button" class="btn btn--primary" id="next-day">Next day →</button>
+    </div>
+    <div class="dashboard-tools">
+      <label class="dashboard-field" for="day-jump">Stored days
+        <select id="day-jump"></select>
+      </label>
+      <div class="dashboard-appearance" role="group" aria-label="Appearance">
+        <button type="button" class="btn btn--light-outline" data-theme="system">System</button>
+        <button type="button" class="btn btn--light-outline" data-theme="light">Light</button>
+        <button type="button" class="btn btn--light-outline" data-theme="dark">Dark</button>
+      </div>
+    </div>
+  </div>
+
+  <p id="day-summary" class="dashboard-summary" aria-live="polite"></p>
+  <div id="video-grid"></div>
+  <div id="dashboard-message"></div>
+  <p id="updated-at" class="dashboard-updated"></p>
+  <p class="dashboard-source">Channel list: <a href="https://davidgeeraerts.github.io/AI/chapters/07-resources.html#youtube-channels-xml-feeds">Youtube Channels XML Feeds</a>.</p>
+
+  <details id="channel-health" class="dashboard-health">
+    <summary id="channel-summary">Channel feeds</summary>
+    <ul id="channel-list"></ul>
+  </details>
+</div>
+
+<noscript>
+  <p class="notice notice--warning">JavaScript is required to switch days. Per-day JSON is in <code>assets/data/days/</code>.</p>
+</noscript>
+
+<script src="{{ '/assets/js/dashboard.js' | relative_url }}"></script>

@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-08",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "hX140a5klW0",
+      "title": "AI Writes Code Faster Than Uber Can Merge It - Preetam Dwivedi & Manjari Akella, Uber",
+      "url": "https://www.youtube.com/watch?v=hX140a5klW0",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T07:00:15+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/hX140a5klW0/hqdefault.jpg"
+    },
+    {
+      "id": "wWisOHEcMPE",
+      "title": "Engineering Agency out of the Happy Path — Matthew Jewkes, Standard Cybernetics",
+      "url": "https://www.youtube.com/watch?v=wWisOHEcMPE",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T04:00:33+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/wWisOHEcMPE/hqdefault.jpg"
+    },
+    {
+      "id": "JLs10oOX6NY",
+      "title": "I Tested Local AI on My Mac Studio So You Don't Have To",
+      "url": "https://www.youtube.com/watch?v=JLs10oOX6NY",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-08T15:30:20+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/JLs10oOX6NY/hqdefault.jpg"
+    },
+    {
+      "id": "H_GJapsoLyU",
+      "title": "Why AI Models Run Faster on Some Chips: The KV Cache Effect",
+      "url": "https://www.youtube.com/watch?v=H_GJapsoLyU",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-08T12:00:25+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/H_GJapsoLyU/hqdefault.jpg"
+    }
+  ]
+}
