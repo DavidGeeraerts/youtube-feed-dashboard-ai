@@ -3,7 +3,17 @@
 All notable changes to this project are documented in this file.
 
 Version numbers follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-Entries use these categories: Added, Changed, Fixed, Removed, Security, Deprecated.
+Entries use these categories:
+
+## Features Heading
+- `Added` for new features.
+- `Changed` for changes in existing functionality.
+- `Fixed` for any bug fixes.
+- `Removed` for now removed features.
+- `Security` in case of vulnerabilities.
+- `Deprecated` for soon-to-be removed features.
+
+
 
 ## [0.1.0] - 2026-11-09
 
