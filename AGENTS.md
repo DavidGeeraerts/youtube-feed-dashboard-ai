@@ -1,8 +1,11 @@
 <instructions>
 
 # Instructions:
+
   <changelog>
+    
     ## Change log
+    
     - Use [semantic version control](https://semver.org/)
     - When updating changelog.md use the following template 
       - Added for new features.
@@ -12,5 +15,7 @@
       - Security in case of vulnerabilities.
       - Deprecated for soon-to-be removed features.
     - Order by newest to older
+    
   </changelog>
+  
 </instructions>
