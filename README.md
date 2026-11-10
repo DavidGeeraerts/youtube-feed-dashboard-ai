@@ -20,7 +20,7 @@ The theme is [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) 4
 
 It fits this dashboard for three reasons:
 
-- GitHub Pages can build it. `jekyll-remote-theme` and `jekyll-include-cache` are part of the Pages gem, and the Actions workflow builds with `actions/jekyll-build-pages` (the same Jekyll Pages uses) and deploys the result.
+- GitHub Pages can build it. `jekyll-remote-theme` and `jekyll-include-cache` are part of the Pages gem, and the Actions workflow builds with that gem through Bundler, then deploys the result.
 - It is built for cards and thumbnails. Archive pages have a grid layout (`entries_layout: grid`) and posts can use a gallery of images. The video board uses that card idea, with a 16:9 frame instead of the theme's short blog-teaser crop, so YouTube thumbnails stay intact.
 - Light and dark are both readable. The light skin is **Catppuccin Latte** and the dark skin is **Catppuccin Mocha**, a matched pair shipped with the theme. The page follows the system setting and has System / Light / Dark controls.
 
