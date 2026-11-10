@@ -2,6 +2,8 @@
 <img src="/assets/images/Project-youtube-feed-dashboard-ai-banner-.jpg" alt="Banner"/>
 </div>
 
+[![Update dashboard](https://github.com/DavidGeeraerts/youtube-feed-dashboard-ai/actions/workflows/update-dashboard.yml/badge.svg)](https://github.com/DavidGeeraerts/youtube-feed-dashboard-ai/actions/workflows/update-dashboard.yml)
+
 # YouTube feed dashboard
 
 Daily dashboard of new videos from the YouTube channels listed in [The Book of AI, chapter 7](https://davidgeeraerts.github.io/AI/chapters/07-resources.html#youtube-channels-xml-feeds) (section **Youtube Channels XML Feeds**).
