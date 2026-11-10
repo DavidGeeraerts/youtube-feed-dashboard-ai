@@ -53,15 +53,26 @@ jobs:
         run: bash scripts/publish_feed_data.sh "${GITHUB_REF_NAME}"
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        id: pages
+        uses: actions/configure-pages@v6
+
+      # Build with this repo's Gemfile. actions/jekyll-build-pages ships
+      # github-pages 232 and warns when the Gemfile resolves to a newer gem.
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
 
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          build_revision: ${{ steps.feed.outputs.sha }}
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+          JEKYLL_GITHUB_TOKEN: ${{ github.token }}
+          JEKYLL_BUILD_REVISION: ${{ steps.feed.outputs.sha }}
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
 
   deploy:
     needs: build
@@ -72,4 +83,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

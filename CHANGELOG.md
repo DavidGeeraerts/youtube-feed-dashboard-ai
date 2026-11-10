@@ -35,3 +35,10 @@ Entries use these categories:
 ### Fixed
 
 - Pushing feed data no longer fails with `fetch first` when `main` moves during a run. The push is rebased onto the latest branch and retried. If a day file conflicts, it is regenerated from the latest stored days plus a fresh fetch.
+
+## [0.1.2] - 2026-11-10
+
+### Changed
+
+- The Pages build uses this repo's Gemfile (`bundle exec jekyll build`) instead of `actions/jekyll-build-pages`, whose pinned `github-pages` 232 gem warned that it could not satisfy the Gemfile.
+- Pages actions are the Node 24 releases: `actions/configure-pages` v6, `actions/upload-pages-artifact` v5 (which uploads with `actions/upload-artifact` v7), and `actions/deploy-pages` v5.
