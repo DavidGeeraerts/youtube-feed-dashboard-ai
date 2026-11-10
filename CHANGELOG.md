@@ -42,3 +42,10 @@ Entries use these categories:
 
 - The Pages build uses this repo's Gemfile (`bundle exec jekyll build`) instead of `actions/jekyll-build-pages`, whose pinned `github-pages` 232 gem warned that it could not satisfy the Gemfile.
 - Pages actions are the Node 24 releases: `actions/configure-pages` v6, `actions/upload-pages-artifact` v5 (which uploads with `actions/upload-artifact` v7), and `actions/deploy-pages` v5.
+
+## [0.1.3] - 2026-11-10
+
+### Fixed
+
+- YouTube feed fetches try a transient failure up to 5 times, including HTTP 404 and 5xx from the feeds endpoint, with exponential backoff and jitter. One bad response no longer marks that channel as failed for the run.
+- A channel that errors (HTTP error, timeout, invalid XML, or an unexpected exception) is logged and skipped. The other channels are still fetched and saved, videos already stored for the failed channel are kept, and the run still publishes the data that succeeded.

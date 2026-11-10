@@ -45,7 +45,12 @@ jobs:
           git fetch origin "${GITHUB_REF_NAME}"
           git checkout -B "${GITHUB_REF_NAME}" "origin/${GITHUB_REF_NAME}"
 
+      # Exits 0 when some or all channel feeds fail, after logging which
+      # ones and why, so this step still commits and publishes the rest.
+      # Exits 1 only when the channel list page itself cannot be read.
       - name: Fetch YouTube feeds
+        env:
+          PYTHONUNBUFFERED: "1"
         run: python scripts/fetch_feeds.py
 
       - name: Commit feed data
