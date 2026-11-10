@@ -26,7 +26,7 @@ It fits this dashboard for three reasons:
 
 ## How it works
 
-1. `.github/workflows/update-dashboard.yml` runs four times a day, and whenever someone starts it with **Run workflow**.
+1. `.github/workflows/update-dashboard.yml` runs every hour at minute 30 UTC, and whenever someone starts it with **Run workflow**.
 2. `scripts/fetch_feeds.py` downloads the raw Quarto file [`chapters/_07.1-youtube-xml-feeds.qmd`](https://raw.githubusercontent.com/DavidGeeraerts/AI/main/chapters/_07.1-youtube-xml-feeds.qmd) and reads its markdown links. Each link is a channel feed (`https://www.youtube.com/feeds/videos.xml?channel_id=...`). Channels added in that file are picked up on the next run. Nothing in this repo has to be edited to follow a new channel. If the document is the older rendered resources page instead, the script still reads `#youtube-channels-xml-feeds`, or every feed link on the page when that section is missing.
 3. Each feed is fetched with the Python standard library. A transient failure — timeout, connection error, HTTP 429, HTTP 5xx, or a 404 from YouTube's feeds endpoint — is tried up to 5 times with exponential backoff and a little jitter between tries (about 2s, 4s, 8s, and 8s). A channel that still fails, times out, returns invalid XML, or raises an unexpected error is logged and skipped. The other channels are saved, videos already stored for the failed channel stay, and the script still exits successfully so the workflow can publish the data that succeeded. If the channel list itself cannot be read, the script exits with an error and leaves the stored days alone.
 4. Videos are deduped by YouTube video id. The publish time is converted to America/Los_Angeles, and the video is stored under that calendar date. A video that is already stored stays on its original day.
@@ -48,7 +48,9 @@ The dashboard URL is [https://davidgeeraerts.github.io/youtube-feed-dashboard-ai
 
 Edit the `cron` line in `.github/workflows/update-dashboard.yml`. GitHub cron is UTC, and a run can start later than the time you write.
 
-The current schedule is `30 3,15,19,23 * * *` (03:30, 15:30, 19:30, and 23:30 UTC), which is about 7:30am, 11:30am, 3:30pm, and 7:30pm Pacific Standard Time, or one hour later during Pacific Daylight Time.
+The current schedule is `30 * * * *` (minute 30 of every hour, UTC). The half hour avoids the top-of-hour rush on GitHub's scheduled runners. A run can still start later than :30. In Pacific time that is about 30 minutes past each hour during Pacific Standard Time, or one hour later during Pacific Daylight Time.
+
+If a run is still going when the next hour starts, it is left to finish. The next run waits in the `youtube-dashboard` concurrency group, so two runs cannot push feed data at the same time. A run that is already waiting is replaced by the newer one, so delayed hours do not stack up.
 
 `workflow_dispatch` is listed next to the schedule, so **Run workflow** stays available no matter what the cron says.
 

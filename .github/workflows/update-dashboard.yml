@@ -1,12 +1,11 @@
 name: Update dashboard
 
 # GitHub schedules are UTC and can start later than the clock time.
-# 03:30, 15:30, 19:30, and 23:30 UTC land in the Pacific morning, midday,
-# afternoon, and evening (about 7:30am, 11:30am, 3:30pm, and 7:30pm PST,
-# or one hour later during PDT).
+# Minute 30 avoids the top-of-hour rush. In Pacific time that is about
+# 30 minutes past each hour (PST), or one hour later during PDT.
 on:
   schedule:
-    - cron: "30 3,15,19,23 * * *"
+    - cron: "30 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -14,7 +13,10 @@ permissions:
   pages: write
   id-token: write
 
-# Queue overlapping runs so two jobs cannot push feed data at the same time.
+# One run at a time. cancel-in-progress stays false so a run that is inside
+# the feed retry backoff, or pushing data, is not aborted when the next hour
+# starts. A second run waits. GitHub keeps only the latest pending run in
+# this group, so hourly ticks do not pile up.
 concurrency:
   group: youtube-dashboard
   cancel-in-progress: false
