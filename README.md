@@ -6,7 +6,7 @@
 
 # YouTube feed dashboard
 
-Daily dashboard of new videos from the YouTube channels listed in [The Book of AI, chapter 7](https://davidgeeraerts.github.io/AI/chapters/07-resources.html#youtube-channels-xml-feeds) (section **Youtube Channels XML Feeds**).
+Daily dashboard of new videos from the YouTube channels listed in [Youtube Channels XML Feeds](https://github.com/DavidGeeraerts/AI/blob/main/chapters/_07.1-youtube-xml-feeds.qmd) (`chapters/_07.1-youtube-xml-feeds.qmd` in the Book of AI).
 
 Dates and publish times use **America/Los_Angeles**. The page opens on today in that time zone. **Yesterday** is one step back, and earlier days that have been stored can be opened with Previous day or the day menu.
 
@@ -27,8 +27,8 @@ It fits this dashboard for three reasons:
 ## How it works
 
 1. `.github/workflows/update-dashboard.yml` runs four times a day, and whenever someone starts it with **Run workflow**.
-2. `scripts/fetch_feeds.py` downloads the resources page and reads the links in `#youtube-channels-xml-feeds`. Each link is a channel feed (`https://www.youtube.com/feeds/videos.xml?channel_id=...`). Channels added on that page are picked up on the next run. Nothing in this repo has to be edited to follow a new channel.
-3. Each feed is fetched with the Python standard library. A transient failure — timeout, connection error, HTTP 429, HTTP 5xx, or a 404 from YouTube's feeds endpoint — is tried up to 5 times with exponential backoff and a little jitter between tries (about 2s, 4s, 8s, and 8s). A channel that still fails, times out, returns invalid XML, or raises an unexpected error is logged and skipped. The other channels are saved, videos already stored for the failed channel stay, and the script still exits successfully so the workflow can publish the data that succeeded. If the resources page itself cannot be read, the script exits with an error and leaves the stored days alone.
+2. `scripts/fetch_feeds.py` downloads the raw Quarto file [`chapters/_07.1-youtube-xml-feeds.qmd`](https://raw.githubusercontent.com/DavidGeeraerts/AI/main/chapters/_07.1-youtube-xml-feeds.qmd) and reads its markdown links. Each link is a channel feed (`https://www.youtube.com/feeds/videos.xml?channel_id=...`). Channels added in that file are picked up on the next run. Nothing in this repo has to be edited to follow a new channel. If the document is the older rendered resources page instead, the script still reads `#youtube-channels-xml-feeds`, or every feed link on the page when that section is missing.
+3. Each feed is fetched with the Python standard library. A transient failure — timeout, connection error, HTTP 429, HTTP 5xx, or a 404 from YouTube's feeds endpoint — is tried up to 5 times with exponential backoff and a little jitter between tries (about 2s, 4s, 8s, and 8s). A channel that still fails, times out, returns invalid XML, or raises an unexpected error is logged and skipped. The other channels are saved, videos already stored for the failed channel stay, and the script still exits successfully so the workflow can publish the data that succeeded. If the channel list itself cannot be read, the script exits with an error and leaves the stored days alone.
 4. Videos are deduped by YouTube video id. The publish time is converted to America/Los_Angeles, and the video is stored under that calendar date. A video that is already stored stays on its original day.
 5. The workflow commits `assets/data/index.json` and `assets/data/days/YYYY-MM-DD.json` so a video remains available after it falls off YouTube's 15-item feed. It commits on top of the latest branch tip. If that push is rejected, it rebases and retries. A conflicting day file is regenerated from the stored days on that tip plus a fresh fetch.
 6. The same workflow builds the Jekyll site and deploys it to GitHub Pages. The page loads today's JSON in the browser, so "today" stays correct in America/Los_Angeles even if the last build was yesterday.

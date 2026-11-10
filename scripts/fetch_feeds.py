@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Fetch YouTube channel feeds and write per-day JSON for the dashboard.
 
-The channel list is read at run time from the "Youtube Channels XML Feeds"
-section of https://davidgeeraerts.github.io/AI/chapters/07-resources.html
+The channel list is read at run time from the Quarto source
+https://raw.githubusercontent.com/DavidGeeraerts/AI/main/chapters/_07.1-youtube-xml-feeds.qmd
 Videos are grouped by the calendar date in America/Los_Angeles, deduped by
 video id, and merged into assets/data/days/YYYY-MM-DD.json.
 
@@ -22,6 +22,7 @@ import argparse
 import http.client
 import json
 import random
+import re
 import sys
 import time
 import traceback
@@ -35,11 +36,21 @@ from html.parser import HTMLParser
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+# Raw Quarto source. The dashboard links to the same file on github.com.
 SOURCE_URL = (
-    "https://davidgeeraerts.github.io/AI/chapters/07-resources.html"
-    "#youtube-channels-xml-feeds"
+    "https://raw.githubusercontent.com/DavidGeeraerts/AI/main/"
+    "chapters/_07.1-youtube-xml-feeds.qmd"
+)
+SOURCE_VIEW_URL = (
+    "https://github.com/DavidGeeraerts/AI/blob/main/"
+    "chapters/_07.1-youtube-xml-feeds.qmd"
 )
 SECTION_ID = "youtube-channels-xml-feeds"
+_MARKDOWN_LINK = re.compile(r"\[([^\]\n]+)\]\(([^)\s]+)\)")
+_SECTION_HEADING = re.compile(
+    r"^[ \t]*#{1,6}[ \t]+youtube channels xml feeds[ \t]*$",
+    re.IGNORECASE | re.MULTILINE,
+)
 TIMEZONE = "America/Los_Angeles"
 LA = ZoneInfo(TIMEZONE)
 USER_AGENT = (
@@ -214,12 +225,67 @@ def dedupe_channels(channels: list[dict]) -> list[dict]:
     return unique
 
 
-def parse_channel_list(html: str) -> ChannelList:
+def _strip_front_matter(text: str) -> str:
+    """Drop a leading Quarto/YAML block so a URL in it is not a channel."""
+    if not text.startswith("---"):
+        return text
+    lines = text.splitlines(keepends=True)
+    if not lines or lines[0].strip() != "---":
+        return text
+    for index, line in enumerate(lines[1:], start=1):
+        if line.strip() == "---":
+            return "".join(lines[index + 1 :])
+    return text
+
+
+def _markdown_channels(text: str) -> list[dict]:
+    channels: list[dict] = []
+    for name, href in _MARKDOWN_LINK.findall(text):
+        feed = channel_feed(href)
+        if not feed:
+            continue
+        channels.append(
+            {
+                "name": " ".join(name.split()) or feed["channel_id"],
+                "channel_id": feed["channel_id"],
+                "feed_url": feed["feed_url"],
+            }
+        )
+    return channels
+
+
+def _has_section_heading(text: str) -> bool:
+    return _SECTION_HEADING.search(text) is not None
+
+
+def parse_channel_list(text: str) -> ChannelList:
+    """Read channel names and feed URLs from the Quarto list or from HTML.
+
+    The qmd file is a markdown list under ``## Youtube Channels XML Feeds``.
+    When that heading and at least one markdown feed link are present, those
+    links are the list. Otherwise the rendered resources page is still
+    accepted: links inside ``#youtube-channels-xml-feeds``, or every feed
+    link in the document when that section is missing. Markdown links with
+    no heading are used the same way.
+    """
+    body = _strip_front_matter(text.replace("\r\n", "\n").replace("\r", "\n"))
     parser = _ChannelParser()
-    parser.feed(html)
+    parser.feed(body)
     parser.close()
-    chosen = parser.section_links if parser.section_found else parser.page_links
-    return ChannelList(section_found=parser.section_found, channels=dedupe_channels(chosen))
+    markdown = _markdown_channels(body)
+    if _has_section_heading(body) and markdown:
+        chosen = markdown
+        section_found = True
+    elif parser.section_found:
+        chosen = parser.section_links
+        section_found = True
+    elif markdown:
+        chosen = markdown
+        section_found = False
+    else:
+        chosen = parser.page_links
+        section_found = False
+    return ChannelList(section_found=section_found, channels=dedupe_channels(chosen))
 
 
 def _text(node: ET.Element | None) -> str:
@@ -527,13 +593,14 @@ def update_dashboard(
     parsed = parse_channel_list(html)
     if not parsed.section_found:
         print(
-            f"warning: section #{SECTION_ID} was not found; using every channel feed link on the page",
+            "warning: Youtube Channels XML Feeds heading was not found; "
+            "using every channel feed link in the document",
             file=sys.stderr,
         )
     if not parsed.channels:
         raise FatalFetchError(
-            "No YouTube channel XML feeds found on the resources page "
-            f"({source_url}). Expected a list inside section id '{SECTION_ID}'."
+            "No YouTube channel XML feeds found in the channel list "
+            f"({source_url})."
         )
 
     incoming: list[dict] = []
@@ -633,7 +700,11 @@ def update_dashboard(
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", default="assets/data", help="Directory for index.json and days/")
-    parser.add_argument("--source-url", default=SOURCE_URL, help="Resources page, with or without the section hash")
+    parser.add_argument(
+        "--source-url",
+        default=SOURCE_URL,
+        help="Channel list URL (raw Quarto file, or the rendered HTML page)",
+    )
     args = parser.parse_args(argv)
     try:
         summary = update_dashboard(Path(args.data_dir), args.source_url)

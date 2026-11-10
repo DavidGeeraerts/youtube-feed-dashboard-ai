@@ -13,29 +13,33 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import fetch_feeds
 
 
-REAL_SECTION = """
-<section id="other">
-  <a href="https://www.youtube.com/feeds/videos.xml?channel_id=SHOULD_NOT">Nope</a>
-</section>
-<section id="youtube-channels-xml-feeds" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="youtube-channels-xml-feeds"><span class="header-section-number">7.4</span> Youtube Channels XML Feeds</h2>
-<ul>
-<li><a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCeNLqAes-kUMjWksPA6d-BA">0xSero</a></li>
-<li><a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCm4Sy7W36u_ZFOZWX9cd07w">Agent Zero</a></li>
-<li><a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCgkApalw5crKXOtr_mqtPQg">Agentic AI Foundation</a></li>
-<li><a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCLKPca3kwwd-B59HNr-_lvA">AI Engineer</a></li>
-<li><a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ">Andrej Karpathy</a></li>
-<li><a href="https://www.youtube.com/feeds/videos.xml?channel_id=UC-mexo-76-J1MlQM8NkWCYw">Armin Ronacher</a></li>
-<li><a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCKWaEZ-_VweaEx1j62do_vQ">IBM Technology</a></li>
-<li><a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCgUfJoPtkt7-RiiuYh4vmGA">Kai</a></li>
-<li><a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCPbwhExawYrn9xxI21TFfyw">The Pragmatic Engineer</a></li>
-<li><a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCgUfJoPtkt7-RiiuYh4vmGA">Kai again</a></li>
-</ul>
-</section>
-<section id="youtube-videos">
-  <a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCAFTER">After</a>
-</section>
+# chapters/_07.1-youtube-xml-feeds.qmd as of 2026-11-10, including the
+# "Order by Name" line. The live file has no trailing newline.
+QMD_CHANNEL_LIST = """## Youtube Channels XML Feeds
+(Order by Name ↑)
+
+- [0xSero](https://www.youtube.com/feeds/videos.xml?channel_id=UCeNLqAes-kUMjWksPA6d-BA)
+- [Agent Zero](https://www.youtube.com/feeds/videos.xml?channel_id=UCm4Sy7W36u_ZFOZWX9cd07w)
+- [Agentic AI Foundation](https://www.youtube.com/feeds/videos.xml?channel_id=UCgkApalw5crKXOtr_mqtPQg)
+- [AI Engineer](https://www.youtube.com/feeds/videos.xml?channel_id=UCLKPca3kwwd-B59HNr-_lvA)
+- [Andrej Karpathy](https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ)
+- [Armin Ronacher](https://www.youtube.com/feeds/videos.xml?channel_id=UC-mexo-76-J1MlQM8NkWCYw)
+- [IBM Technology](https://www.youtube.com/feeds/videos.xml?channel_id=UCKWaEZ-_VweaEx1j62do_vQ)
+- [Kai](https://www.youtube.com/feeds/videos.xml?channel_id=UCgUfJoPtkt7-RiiuYh4vmGA)
+- [The Pragmatic Engineer](https://www.youtube.com/feeds/videos.xml?channel_id=UCPbwhExawYrn9xxI21TFfyw)
 """
+
+NINE_CHANNEL_NAMES = [
+    "0xSero",
+    "Agent Zero",
+    "Agentic AI Foundation",
+    "AI Engineer",
+    "Andrej Karpathy",
+    "Armin Ronacher",
+    "IBM Technology",
+    "Kai",
+    "The Pragmatic Engineer",
+]
 
 KAI_FEED = b"""<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
@@ -67,26 +71,73 @@ KAI_FEED = b"""<?xml version="1.0" encoding="UTF-8"?>
 
 class ParseTests(unittest.TestCase):
     def test_real_section_lists_nine_channels_in_order(self):
-        parsed = fetch_feeds.parse_channel_list(REAL_SECTION)
+        parsed = fetch_feeds.parse_channel_list(QMD_CHANNEL_LIST)
         self.assertTrue(parsed.section_found)
         names = [channel["name"] for channel in parsed.channels]
-        self.assertEqual(
-            names,
-            [
-                "0xSero",
-                "Agent Zero",
-                "Agentic AI Foundation",
-                "AI Engineer",
-                "Andrej Karpathy",
-                "Armin Ronacher",
-                "IBM Technology",
-                "Kai",
-                "The Pragmatic Engineer",
-            ],
-        )
+        self.assertEqual(names, NINE_CHANNEL_NAMES)
         armin = parsed.channels[5]
         self.assertEqual(armin["channel_id"], "UC-mexo-76-J1MlQM8NkWCYw")
-        self.assertTrue(armin["feed_url"].startswith("https://www.youtube.com/feeds/videos.xml?channel_id="))
+        self.assertEqual(
+            armin["feed_url"],
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mexo-76-J1MlQM8NkWCYw",
+        )
+        self.assertEqual(
+            fetch_feeds.SOURCE_URL,
+            "https://raw.githubusercontent.com/DavidGeeraerts/AI/main/chapters/_07.1-youtube-xml-feeds.qmd",
+        )
+        self.assertEqual(
+            fetch_feeds.SOURCE_VIEW_URL,
+            "https://github.com/DavidGeeraerts/AI/blob/main/chapters/_07.1-youtube-xml-feeds.qmd",
+        )
+
+    def test_markdown_normalizes_http_and_ignores_non_feeds(self):
+        text = """
+        ## Youtube Channels XML Feeds
+        - [Example](http://youtube.com/feeds/videos.xml?channel_id=UCabc&extra=1)
+        - [Other](https://example.com/feeds/videos.xml?channel_id=UCnope)
+        - [Relative](//www.youtube.com/feeds/videos.xml?channel_id=UCdef)
+        - [Kai](https://www.youtube.com/feeds/videos.xml?channel_id=UCdef)
+        """
+        parsed = fetch_feeds.parse_channel_list(text)
+        self.assertTrue(parsed.section_found)
+        self.assertEqual(
+            [(channel["name"], channel["feed_url"]) for channel in parsed.channels],
+            [
+                ("Example", "https://www.youtube.com/feeds/videos.xml?channel_id=UCabc"),
+                ("Relative", "https://www.youtube.com/feeds/videos.xml?channel_id=UCdef"),
+            ],
+        )
+
+    def test_markdown_without_heading_still_lists_channels(self):
+        text = "- [Only](https://www.youtube.com/feeds/videos.xml?channel_id=UConly)"
+        parsed = fetch_feeds.parse_channel_list(text)
+        self.assertFalse(parsed.section_found)
+        self.assertEqual(parsed.channels[0]["name"], "Only")
+
+    def test_front_matter_link_is_not_a_channel(self):
+        text = """---
+title: [Skip](https://www.youtube.com/feeds/videos.xml?channel_id=UCskip)
+---
+## Youtube Channels XML Feeds
+
+- [Kept](https://www.youtube.com/feeds/videos.xml?channel_id=UCkept)
+"""
+        parsed = fetch_feeds.parse_channel_list(text)
+        self.assertEqual([channel["name"] for channel in parsed.channels], ["Kept"])
+
+    def test_html_section_ignores_links_outside_it(self):
+        html = """
+        <section id="other">
+          <a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCSKIP">Nope</a>
+        </section>
+        <section id="youtube-channels-xml-feeds">
+          <a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCkeep">Kept</a>
+        </section>
+        <p><a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCAFTER">After</a></p>
+        """
+        parsed = fetch_feeds.parse_channel_list(html)
+        self.assertTrue(parsed.section_found)
+        self.assertEqual([channel["name"] for channel in parsed.channels], ["Kept"])
 
     def test_normalizes_http_and_ignores_non_feeds(self):
         html = """
@@ -194,7 +245,7 @@ class UpdateTests(unittest.TestCase):
         """
 
         def fetcher(url: str) -> bytes:
-            if url.endswith("07-resources.html"):
+            if url == fetch_feeds.page_url(fetch_feeds.SOURCE_URL):
                 return html.encode()
             if "UCbroken" in url:
                 raise fetch_feeds.FetchError("HTTP 503")
@@ -243,6 +294,34 @@ class UpdateTests(unittest.TestCase):
             broken = [channel for channel in index["channels"] if channel["name"] == "Broken"][0]
             self.assertEqual(broken["status"], "error")
             self.assertIn("2026-10-01", index["days"])
+
+    def test_qmd_list_is_read_from_the_raw_url(self):
+        qmd = """## Youtube Channels XML Feeds
+
+- [Kai](https://www.youtube.com/feeds/videos.xml?channel_id=UCgUfJoPtkt7-RiiuYh4vmGA)
+"""
+        seen = []
+
+        def fetcher(url: str) -> bytes:
+            seen.append(url)
+            if url == fetch_feeds.page_url(fetch_feeds.SOURCE_URL):
+                return qmd.encode()
+            if "UCgUfJoPtkt7-RiiuYh4vmGA" in url:
+                return KAI_FEED
+            raise AssertionError(url)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            summary = fetch_feeds.update_dashboard(
+                Path(tmp),
+                fetcher=fetcher,
+                now=datetime(2026, 11, 9, 18, 0, tzinfo=timezone.utc),
+                pause=0,
+            )
+        self.assertEqual(seen[0], fetch_feeds.SOURCE_URL)
+        self.assertEqual(summary["errors"], 0)
+        self.assertTrue(summary["section_found"])
+        self.assertEqual(summary["channels"][0]["name"], "Kai")
+        self.assertGreaterEqual(summary["today_count"], 1)
 
     def test_missing_channel_list_does_not_wipe_days(self):
         def fetcher(url: str) -> bytes:
@@ -481,7 +560,7 @@ class IsolationTests(NoNetworkTestCase):
 
         def fetch(url, timeout=0.0):
             calls.append(url)
-            if url.endswith("07-resources.html"):
+            if url == fetch_feeds.page_url(fetch_feeds.SOURCE_URL):
                 return TWO_CHANNEL_PAGE.encode()
             if "UCbroken" in url:
                 raise fetch_feeds.FetchError("HTTP 404")
@@ -511,7 +590,7 @@ class IsolationTests(NoNetworkTestCase):
 
         def fetch(url, timeout=0.0):
             calls.append(url)
-            if url.endswith("07-resources.html"):
+            if url == fetch_feeds.page_url(fetch_feeds.SOURCE_URL):
                 return TWO_CHANNEL_PAGE.encode()
             if "UCbroken" in url:
                 return b"<feed><title>unclosed"
@@ -538,7 +617,7 @@ class IsolationTests(NoNetworkTestCase):
 
         def fetch(url, timeout=0.0):
             calls.append(url)
-            if url.endswith("07-resources.html"):
+            if url == fetch_feeds.page_url(fetch_feeds.SOURCE_URL):
                 return TWO_CHANNEL_PAGE.encode()
             if "UCbroken" in url:
                 raise RuntimeError("boom")
@@ -557,7 +636,7 @@ class IsolationTests(NoNetworkTestCase):
 
     def test_every_feed_failing_still_keeps_stored_days_and_writes_index(self):
         def fetch(url, timeout=0.0):
-            if url.endswith("07-resources.html"):
+            if url == fetch_feeds.page_url(fetch_feeds.SOURCE_URL):
                 return TWO_CHANNEL_PAGE.encode()
             raise fetch_feeds.FetchError("HTTP 404")
 
