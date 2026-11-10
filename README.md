@@ -28,7 +28,7 @@ It fits this dashboard for three reasons:
 2. `scripts/fetch_feeds.py` downloads the resources page and reads the links in `#youtube-channels-xml-feeds`. Each link is a channel feed (`https://www.youtube.com/feeds/videos.xml?channel_id=...`). Channels added on that page are picked up on the next run. Nothing in this repo has to be edited to follow a new channel.
 3. Each feed is fetched with the Python standard library. A feed that fails or returns no videos is recorded in `assets/data/index.json` and does not erase days already stored. If the resources page itself cannot be read, the script exits and leaves the stored days alone.
 4. Videos are deduped by YouTube video id. The publish time is converted to America/Los_Angeles, and the video is stored under that calendar date. A video that is already stored stays on its original day.
-5. The workflow commits `assets/data/index.json` and `assets/data/days/YYYY-MM-DD.json` so a video remains available after it falls off YouTube's 15-item feed.
+5. The workflow commits `assets/data/index.json` and `assets/data/days/YYYY-MM-DD.json` so a video remains available after it falls off YouTube's 15-item feed. It commits on top of the latest branch tip. If that push is rejected, it rebases and retries. A conflicting day file is regenerated from the stored days on that tip plus a fresh fetch.
 6. The same workflow builds the Jekyll site and deploys it to GitHub Pages. The page loads today's JSON in the browser, so "today" stays correct in America/Los_Angeles even if the last build was yesterday.
 
 ## Enable GitHub Pages
