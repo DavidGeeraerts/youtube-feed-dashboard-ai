@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-10",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "LDcRdpVvmgQ",
+      "title": "The value of AI is not doing the same thing faster",
+      "url": "https://www.youtube.com/shorts/LDcRdpVvmgQ",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-11-10T16:00:02+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/LDcRdpVvmgQ/hqdefault.jpg"
+    },
+    {
+      "id": "XK_hz11tmuc",
+      "title": "NVIDIA's 4B Model That Re-Runs Its Own Layers",
+      "url": "https://www.youtube.com/watch?v=XK_hz11tmuc",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-10T15:30:06+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/XK_hz11tmuc/hqdefault.jpg"
+    },
+    {
+      "id": "OrXKvOjR-vI",
+      "title": "Software correctness and programming languages with Sean Allen",
+      "url": "https://www.youtube.com/watch?v=OrXKvOjR-vI",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-11-10T14:23:48+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/OrXKvOjR-vI/hqdefault.jpg"
+    },
+    {
+      "id": "4uvq8Cz3A7Y",
+      "title": "What Is Model Distillation? How Smaller AI Models Learn",
+      "url": "https://www.youtube.com/watch?v=4uvq8Cz3A7Y",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-10T12:00:24+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/4uvq8Cz3A7Y/hqdefault.jpg"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "timezone": "America/Los_Angeles",
-  "generated_at": "2026-11-10T11:39:08+00:00",
+  "generated_at": "2026-11-10T16:31:33+00:00",
   "today": "2026-11-10",
-  "source": "https://davidgeeraerts.github.io/AI/chapters/07-resources.html#youtube-channels-xml-feeds",
+  "source": "https://raw.githubusercontent.com/DavidGeeraerts/AI/main/chapters/_07.1-youtube-xml-feeds.qmd",
   "section_found": true,
   "channels": [
     {
@@ -88,6 +88,7 @@
     }
   ],
   "days": [
+    "2026-11-10",
     "2026-11-09",
     "2026-11-08",
     "2026-11-07",
