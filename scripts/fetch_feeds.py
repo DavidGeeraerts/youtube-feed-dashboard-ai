@@ -4,16 +4,27 @@
 The channel list is read at run time from the "Youtube Channels XML Feeds"
 section of https://davidgeeraerts.github.io/AI/chapters/07-resources.html
 Videos are grouped by the calendar date in America/Los_Angeles, deduped by
-video id, and merged into assets/data/days/YYYY-MM-DD.json. A feed that
-fails or returns nothing is recorded and does not remove videos already stored.
+video id, and merged into assets/data/days/YYYY-MM-DD.json.
+
+YouTube's feeds endpoint sometimes returns 404 or 5xx for a valid channel
+and then 200 a little later. Those responses, plus timeouts and connection
+errors, are retried with exponential backoff and a little jitter. A channel
+that still fails — HTTP error, timeout, invalid XML, or any other exception
+— is logged and skipped. The other channels are saved, and videos already
+stored for the failed channel are left in place. The process exits 0 in that
+case so the workflow can publish the channels that succeeded. Only a missing
+channel list is fatal, and that path does not touch stored days.
 """
 
 from __future__ import annotations
 
 import argparse
+import http.client
 import json
+import random
 import sys
 import time
+import traceback
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -35,6 +46,28 @@ USER_AGENT = (
     "Mozilla/5.0 (compatible; YouTubeFeedDashboard/1.0; "
     "+https://github.com/DavidGeeraerts/youtube-feed-dashboard-ai)"
 )
+# Retry policy for HTTP fetches. These five numbers are the place to tune it.
+#
+# YouTube's /feeds/videos.xml endpoint intermittently returns 404 or 5xx for
+# a channel that is fine a moment later. Each URL is tried FEED_FETCH_ATTEMPTS
+# times (the first try plus retries). After failed try n (0-based) the wait is
+# min(FEED_RETRY_BASE_DELAY * 2**n, FEED_RETRY_MAX_DELAY) plus up to
+# FEED_RETRY_JITTER seconds.
+#
+# Defaults: 5 tries, waits of 2s, 4s, 8s, and 8s, jitter up to 0.5s, socket
+# timeout 8s. For the 9 channels this dashboard follows:
+# - every feed returns an immediate error: about 3.5 minutes of sleep, then
+#   the run still saves whichever channels succeeded
+# - every attempt hangs until the socket timeout and then backs off: about
+#   10 minutes, inside the workflow's 20-minute job limit
+FEED_FETCH_ATTEMPTS = 5
+FEED_FETCH_TIMEOUT = 8.0
+FEED_RETRY_BASE_DELAY = 2.0
+FEED_RETRY_MAX_DELAY = 8.0
+FEED_RETRY_JITTER = 0.5
+# Retried for any URL, along with every 5xx. 404 is omitted on purpose:
+# only a YouTube channel feed treats 404 as transient. See retryable_fetch_error.
+_RETRYABLE_HTTP_STATUSES = frozenset({408, 425, 429})
 ATOM = "http://www.w3.org/2005/Atom"
 YT = "http://www.youtube.com/xml/schemas/2015"
 MEDIA = "http://search.yahoo.com/mrss/"
@@ -350,6 +383,52 @@ def write_json(path: Path, payload: dict) -> bool:
     return True
 
 
+def _http_status(message: str) -> int | None:
+    parts = message.split()
+    if len(parts) < 2 or parts[0] != "HTTP":
+        return None
+    try:
+        return int(parts[1])
+    except ValueError:
+        return None
+
+
+def retryable_fetch_error(message: str, url: str) -> bool:
+    """True when this failure is worth another try.
+
+    A 404 is retried only for a YouTube channel feed. That endpoint returns
+    404 for valid channels during short outages. A 404 on the channel list
+    page is treated as final.
+    """
+    if message == "timeout" or message.startswith("connection error"):
+        return True
+    status = _http_status(message)
+    if status is None:
+        return False
+    if status in _RETRYABLE_HTTP_STATUSES or 500 <= status <= 599:
+        return True
+    return status == 404 and channel_feed(url) is not None
+
+
+def retry_delay(failed_attempt: int, random_fn=None) -> float:
+    """Seconds to wait after failed attempt ``failed_attempt`` (0-based)."""
+    if failed_attempt < 0:
+        raise ValueError("failed_attempt must be >= 0")
+    if random_fn is None:
+        random_fn = random.random
+    delay = min(FEED_RETRY_BASE_DELAY * (2 ** failed_attempt), FEED_RETRY_MAX_DELAY)
+    jitter = FEED_RETRY_JITTER
+    if jitter:
+        delay += jitter * float(random_fn())
+    return delay
+
+
+def failure_message(exc: Exception) -> str:
+    if isinstance(exc, (FetchError, FeedParseError)):
+        return str(exc)
+    return f"unexpected error: {type(exc).__name__}: {exc}"
+
+
 def fetch_bytes(url: str, timeout: float = 20.0) -> bytes:
     request = urllib.request.Request(
         url,
@@ -366,8 +445,8 @@ def fetch_bytes(url: str, timeout: float = 20.0) -> bytes:
     except urllib.error.URLError as exc:
         reason = getattr(exc, "reason", exc)
         raise FetchError(f"connection error: {reason}") from exc
-    except TimeoutError as exc:
-        raise FetchError("timeout") from exc
+    except (TimeoutError, ConnectionError, http.client.HTTPException) as exc:
+        raise FetchError(f"connection error: {exc}") from exc
     if len(data) > 5_000_000:
         raise FetchError("response too large")
     if data[:2] == b"\x1f\x8b":
@@ -380,17 +459,52 @@ def fetch_bytes(url: str, timeout: float = 20.0) -> bytes:
     return data
 
 
-def fetch_bytes_retry(url: str, attempts: int = 2, timeout: float = 20.0) -> bytes:
+def fetch_bytes_retry(
+    url: str,
+    attempts: int | None = None,
+    timeout: float | None = None,
+    *,
+    sleeper=None,
+    fetch=None,
+    random_fn=None,
+) -> bytes:
+    """Fetch ``url``, retrying transient failures with exponential backoff.
+
+    ``attempts`` includes the first try. Pass ``sleeper``, ``fetch``, and
+    ``random_fn`` in tests so nothing sleeps or touches the network.
+    """
+    if attempts is None:
+        attempts = FEED_FETCH_ATTEMPTS
+    if timeout is None:
+        timeout = FEED_FETCH_TIMEOUT
+    if sleeper is None:
+        sleeper = time.sleep
+    if fetch is None:
+        fetch = fetch_bytes
+    if random_fn is None:
+        random_fn = random.random
+    if attempts < 1:
+        raise ValueError("attempts must be at least 1")
+
     last = "fetch failed"
-    for attempt in range(attempts):
+    tries = 0
+    while tries < attempts:
+        tries += 1
         try:
-            return fetch_bytes(url, timeout=timeout)
+            return fetch(url, timeout=timeout)
         except FetchError as exc:
             last = str(exc)
-            retry = last == "timeout" or last.startswith("connection error") or last.startswith("HTTP 5") or last == "HTTP 429"
-            if not retry or attempt + 1 == attempts:
+            if tries >= attempts or not retryable_fetch_error(last, url):
                 break
-            time.sleep(1.5)
+            delay = retry_delay(tries - 1, random_fn=random_fn)
+            print(
+                f"retrying fetch after {last} "
+                f"(failed attempt {tries} of {attempts}, waiting {delay:.1f}s): {url}",
+                file=sys.stderr,
+            )
+            sleeper(delay)
+    if tries > 1 and retryable_fetch_error(last, url):
+        raise FetchError(f"{last} after {tries} attempts")
     raise FetchError(last)
 
 
@@ -437,37 +551,46 @@ def update_dashboard(
             "videos": 0,
             "error": None,
         }
+        # Build this channel's records locally. A failure here must not
+        # discard videos already accepted from earlier channels, and must
+        # not publish a partial list from this channel.
+        channel_records: list[dict] = []
         try:
             body = fetcher(channel["feed_url"])
             feed_name, videos = parse_feed(body)
-        except (FetchError, FeedParseError) as exc:
-            report["error"] = str(exc)
+            report["feed_name"] = feed_name or None
+            report["videos"] = len(videos)
+            report["status"] = "ok" if videos else "empty"
+            for video in videos:
+                if video["id"] in seen_ids:
+                    continue
+                channel_records.append(
+                    {
+                        "id": video["id"],
+                        "title": video["title"],
+                        "url": video["url"],
+                        "channel": channel["name"],
+                        "channel_id": channel["channel_id"],
+                        "published": video["published"].astimezone(timezone.utc).isoformat(timespec="seconds"),
+                        "thumbnail": video["thumbnail"],
+                        "day": la_date_of(video["published"]),
+                    }
+                )
+        except Exception as exc:
+            report["status"] = "error"
+            report["videos"] = 0
+            report["feed_name"] = None
+            report["error"] = failure_message(exc)
             reports.append(report)
-            print(f"{channel['name']}: error ({exc})", file=sys.stderr)
+            print(f"{channel['name']}: error ({report['error']})", file=sys.stderr)
+            if not isinstance(exc, (FetchError, FeedParseError)):
+                traceback.print_exc()
             continue
-        report["feed_name"] = feed_name or None
-        report["videos"] = len(videos)
-        if videos:
-            report["status"] = "ok"
-        else:
-            report["status"] = "empty"
-        reports.append(report)
-        print(f"{channel['name']}: {report['status']} ({len(videos)} videos)")
-        for video in videos:
-            if video["id"] in seen_ids:
-                continue
-            seen_ids.add(video["id"])
-            record = {
-                "id": video["id"],
-                "title": video["title"],
-                "url": video["url"],
-                "channel": channel["name"],
-                "channel_id": channel["channel_id"],
-                "published": video["published"].astimezone(timezone.utc).isoformat(timespec="seconds"),
-                "thumbnail": video["thumbnail"],
-                "day": la_date_of(video["published"]),
-            }
+        for record in channel_records:
+            seen_ids.add(record["id"])
             incoming.append(record)
+        reports.append(report)
+        print(f"{channel['name']}: {report['status']} ({report['videos']} videos)")
 
     merged = merge_days(load_days(data_dir), incoming)
     days_written = []
@@ -522,6 +645,17 @@ def main(argv: list[str] | None = None) -> int:
         f"{summary['video_count']} stored across {len(summary['days'])} days; "
         f"{summary['errors']} feed errors"
     )
+    failed = [channel for channel in summary["channels"] if channel["status"] == "error"]
+    if failed:
+        print(
+            "Failed channels (stored videos kept; other channels still saved):",
+            file=sys.stderr,
+        )
+        for channel in failed:
+            print(f"  - {channel['name']}: {channel['error']}", file=sys.stderr)
+    # Exit 0 even when every channel feed failed. The day files already on
+    # disk are still valid, and index.json now records which feeds failed,
+    # so the workflow can publish that instead of leaving the site stale.
     return 0
 
 
