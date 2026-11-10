@@ -12,6 +12,12 @@ Entries use these categories, and versions are ordered newest to oldest:
 - `Security` in case of vulnerabilities.
 - `Deprecated` for soon-to-be removed features.
 
+## [0.1.5] - 2026-11-10
+
+### Changed
+
+- The dashboard update workflow runs every hour at minute 30 UTC (`30 * * * *`), instead of four times a day. Manual runs stay available. An overlapping run still waits in the `youtube-dashboard` group instead of cancelling the one that is already fetching or publishing.
+
 ## [0.1.4] - 2026-11-10
 
 ### Changed
