@@ -3,6 +3,69 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "LDMzI0jGDb0",
+      "title": "MCP In The Wild - Thomas Sarlandie, OpenAI",
+      "url": "https://www.youtube.com/watch?v=LDMzI0jGDb0",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-11-10T18:37:52+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/LDMzI0jGDb0/hqdefault.jpg"
+    },
+    {
+      "id": "gbeuC0ud1p4",
+      "title": "Your PR Says the Tests Passed. Prove It. - Stephen Chin & Cassandra Chin",
+      "url": "https://www.youtube.com/watch?v=gbeuC0ud1p4",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T17:57:21+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/gbeuC0ud1p4/hqdefault.jpg"
+    },
+    {
+      "id": "vg3JdjGuJwM",
+      "title": "Every Correction You Give Your Agent Is Data - Brian Douglas, Paper Compute",
+      "url": "https://www.youtube.com/watch?v=vg3JdjGuJwM",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T17:57:20+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/vg3JdjGuJwM/hqdefault.jpg"
+    },
+    {
+      "id": "rS36lYuvXQ8",
+      "title": "Your Agent Hates Your CLI - Ayush Bhardwaj, Allos AI",
+      "url": "https://www.youtube.com/watch?v=rS36lYuvXQ8",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T17:57:20+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/rS36lYuvXQ8/hqdefault.jpg"
+    },
+    {
+      "id": "_NBx2NNOuA4",
+      "title": "Give Your On-Call Its Own AI Teammate - Swaapnika Motapothula, Chinmay Gandhi & Vlad Tsvang, Meta",
+      "url": "https://www.youtube.com/watch?v=_NBx2NNOuA4",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T17:57:20+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/_NBx2NNOuA4/hqdefault.jpg"
+    },
+    {
+      "id": "_7P580m4kPY",
+      "title": "You Can't Tell What an Agent Skill Will Do by Reading It - Roey Ben Chaim, Zenity",
+      "url": "https://www.youtube.com/watch?v=_7P580m4kPY",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T17:57:20+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/_7P580m4kPY/hqdefault.jpg"
+    },
+    {
+      "id": "TlOAhw9t5DA",
+      "title": "Merge Is the Bottleneck - Prasanna Sankar, Vorflux",
+      "url": "https://www.youtube.com/watch?v=TlOAhw9t5DA",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T17:57:20+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/TlOAhw9t5DA/hqdefault.jpg"
+    },
+    {
       "id": "LDcRdpVvmgQ",
       "title": "The value of AI is not doing the same thing faster",
       "url": "https://www.youtube.com/shorts/LDcRdpVvmgQ",

@@ -3,6 +3,24 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "f6OVURAlYXI",
+      "title": "Cut The Noise: Building a Code Reviewer You Can Trust - Joah Gerstenberg, Block, Inc",
+      "url": "https://www.youtube.com/watch?v=f6OVURAlYXI",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-10-25T17:15:48+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/f6OVURAlYXI/hqdefault.jpg"
+    },
+    {
+      "id": "wIPr9GmLRaQ",
+      "title": "Why Domain-specific Agents Are the Future - Justin Schroeder, Standard Agents",
+      "url": "https://www.youtube.com/watch?v=wIPr9GmLRaQ",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-10-25T16:49:23+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/wIPr9GmLRaQ/hqdefault.jpg"
+    },
+    {
       "id": "L2hOD5QtAqI",
       "title": "Middle managers: either retire or reskill",
       "url": "https://www.youtube.com/shorts/L2hOD5QtAqI",
