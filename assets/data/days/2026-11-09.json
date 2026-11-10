@@ -3,6 +3,60 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "ktbAVYsAxpk",
+      "title": "The Agents Were Fine. Everything Around Them Broke. - Joey Wang, Harvey",
+      "url": "https://www.youtube.com/watch?v=ktbAVYsAxpk",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T02:00:24+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/ktbAVYsAxpk/hqdefault.jpg"
+    },
+    {
+      "id": "Zj8Ktm-nuwc",
+      "title": "Omarchy SF Event: Local AI is here now",
+      "url": "https://www.youtube.com/watch?v=Zj8Ktm-nuwc",
+      "channel": "0xSero",
+      "channel_id": "UCeNLqAes-kUMjWksPA6d-BA",
+      "published": "2026-11-10T01:08:48+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/Zj8Ktm-nuwc/hqdefault.jpg"
+    },
+    {
+      "id": "MQiojLnK-E0",
+      "title": "60% of Our Data PRs Now Merge With No Human Review - Chetas Joshi, Robinhood",
+      "url": "https://www.youtube.com/watch?v=MQiojLnK-E0",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T01:00:08+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/MQiojLnK-E0/hqdefault.jpg"
+    },
+    {
+      "id": "yH7_SIIgI-Y",
+      "title": "An Agent That Fixes Its Own Mistakes - Saloni Gandhi & Ziwei Guo, LinkedIn",
+      "url": "https://www.youtube.com/watch?v=yH7_SIIgI-Y",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T00:00:13+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/yH7_SIIgI-Y/hqdefault.jpg"
+    },
+    {
+      "id": "ATMcd9tkhhc",
+      "title": "Stop Chatting With Spreadsheets — Francesco Galletta & Felippe Felisola Caso, Monzo",
+      "url": "https://www.youtube.com/watch?v=ATMcd9tkhhc",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T23:04:36+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/ATMcd9tkhhc/hqdefault.jpg"
+    },
+    {
+      "id": "ntVpbyDTYaQ",
+      "title": "Your Self-Hosted LLM Needs to Say No - Harshul Jain & Parv Khatri, Audible & SAP",
+      "url": "https://www.youtube.com/watch?v=ntVpbyDTYaQ",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-09T23:00:23+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/ntVpbyDTYaQ/hqdefault.jpg"
+    },
+    {
       "id": "BTtyguoPvBU",
       "title": "How One Founder Manages 20 AI Coding Agents at Once - Ryan Carson, Untangle",
       "url": "https://www.youtube.com/watch?v=BTtyguoPvBU",
