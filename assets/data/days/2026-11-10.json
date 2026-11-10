@@ -3,6 +3,33 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "DxP5aW4VknQ",
+      "title": "Your Sub-Agents Are a Distributed System. Treat Them Like One. - Girish Konda, Microsoft",
+      "url": "https://www.youtube.com/watch?v=DxP5aW4VknQ",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T22:00:07+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/DxP5aW4VknQ/hqdefault.jpg"
+    },
+    {
+      "id": "fTUinMqA1XQ",
+      "title": "Your Team's Agents Are All Shipping to the Same Code at Once - Patrick Debois, Tessl",
+      "url": "https://www.youtube.com/watch?v=fTUinMqA1XQ",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T21:00:02+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/fTUinMqA1XQ/hqdefault.jpg"
+    },
+    {
+      "id": "3Krz7Rdd4JI",
+      "title": "Every Company Is Building Agents That Can't Work Together - Justin Schroeder, Standard Agents",
+      "url": "https://www.youtube.com/watch?v=3Krz7Rdd4JI",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T20:00:31+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/3Krz7Rdd4JI/hqdefault.jpg"
+    },
+    {
       "id": "LDMzI0jGDb0",
       "title": "MCP In The Wild - Thomas Sarlandie, OpenAI",
       "url": "https://www.youtube.com/watch?v=LDMzI0jGDb0",
