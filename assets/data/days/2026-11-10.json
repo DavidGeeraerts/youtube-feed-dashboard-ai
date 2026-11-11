@@ -3,6 +3,24 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "iK9gmxXyBR0",
+      "title": "Pick Problems That Survive When AI Solves Coding - Ara Khan, Cline",
+      "url": "https://www.youtube.com/watch?v=iK9gmxXyBR0",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-11T00:00:32+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/iK9gmxXyBR0/hqdefault.jpg"
+    },
+    {
+      "id": "hFNbPmzzcEs",
+      "title": "Your Agent Doesn't Need an LLM for Every Decision - Raymond Weitekamp, OpenProse",
+      "url": "https://www.youtube.com/watch?v=hFNbPmzzcEs",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T23:00:07+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/hFNbPmzzcEs/hqdefault.jpg"
+    },
+    {
       "id": "DxP5aW4VknQ",
       "title": "Your Sub-Agents Are a Distributed System. Treat Them Like One. - Girish Konda, Microsoft",
       "url": "https://www.youtube.com/watch?v=DxP5aW4VknQ",
