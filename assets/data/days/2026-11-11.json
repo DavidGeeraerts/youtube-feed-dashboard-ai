@@ -3,6 +3,15 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "TPo53fFYwYY",
+      "title": "Qwen 4 27b: What to Expect from the next local LLM King?",
+      "url": "https://www.youtube.com/watch?v=TPo53fFYwYY",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-11T15:30:09+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/TPo53fFYwYY/hqdefault.jpg"
+    },
+    {
       "id": "NuL5VFS8Prs",
       "title": "The $6B Binance heist, Meta’s AI bug tests and looming quantum deadlines",
       "url": "https://www.youtube.com/watch?v=NuL5VFS8Prs",
