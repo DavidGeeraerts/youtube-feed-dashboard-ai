@@ -1,6 +1,6 @@
 {
   "timezone": "America/Los_Angeles",
-  "generated_at": "2026-11-12T08:39:21+00:00",
+  "generated_at": "2026-11-12T17:41:37+00:00",
   "today": "2026-11-12",
   "source": "https://raw.githubusercontent.com/DavidGeeraerts/AI/main/chapters/_07.1-youtube-xml-feeds.qmd",
   "section_found": true,
@@ -88,6 +88,7 @@
     }
   ],
   "days": [
+    "2026-11-12",
     "2026-11-11",
     "2026-11-10",
     "2026-11-09",

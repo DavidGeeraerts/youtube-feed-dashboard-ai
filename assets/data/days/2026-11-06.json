@@ -3,6 +3,15 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "y9JtCCZP2MQ",
+      "title": "AIE CODE: OpenAI, ArtCraft, Cognition, Exa, Anthropic, Amp, et al",
+      "url": "https://www.youtube.com/watch?v=y9JtCCZP2MQ",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-06T15:45:58+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/y9JtCCZP2MQ/hqdefault.jpg"
+    },
+    {
       "id": "ZZ19zhYnDKY",
       "title": "AIE CODE: Google DeepMind, Anthropic, SpaceXSI, TypeSafe, Lovable, Ramp, etc (System One theme)",
       "url": "https://www.youtube.com/watch?v=ZZ19zhYnDKY",

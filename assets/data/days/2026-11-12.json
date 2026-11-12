@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-12",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "y9YXhEEwAwc",
+      "title": "Apple's Local AI App for Mac Is Coming (Harbor)",
+      "url": "https://www.youtube.com/watch?v=y9YXhEEwAwc",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-12T15:30:34+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/y9YXhEEwAwc/hqdefault.jpg"
+    },
+    {
+      "id": "dECG1NNfK80",
+      "title": "Agentic AI from Cloud to Edge: Building Intelligent Systems on Arm - Sudheera Vanguri, Arm",
+      "url": "https://www.youtube.com/watch?v=dECG1NNfK80",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-11-12T15:04:08+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/dECG1NNfK80/hqdefault.jpg"
+    },
+    {
+      "id": "hvnPWgfmvyI",
+      "title": "Why AI Agents Need RAG + Observability",
+      "url": "https://www.youtube.com/watch?v=hvnPWgfmvyI",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-12T12:00:39+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/hvnPWgfmvyI/hqdefault.jpg"
+    }
+  ]
+}
