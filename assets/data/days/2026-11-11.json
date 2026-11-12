@@ -3,6 +3,51 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "cWrYEBlWpcY",
+      "title": "Stop Shipping LLM Settings That Only Win on Paper - Rohan Pandey & Balaji Varadarajan, DigitalOcean",
+      "url": "https://www.youtube.com/watch?v=cWrYEBlWpcY",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-12T00:00:27+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/cWrYEBlWpcY/hqdefault.jpg"
+    },
+    {
+      "id": "yzx4IuEh_tU",
+      "title": "Your SKILL.md Is 70% Stuff the Model Already Knows - Nikolay Petrov, Intel",
+      "url": "https://www.youtube.com/watch?v=yzx4IuEh_tU",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-11T23:00:23+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/yzx4IuEh_tU/hqdefault.jpg"
+    },
+    {
+      "id": "0EnLxIbAvYk",
+      "title": "Your Spec Has Bugs. Catch Them Before Your Agent Codes. - Rajath Mahendrappa Kotyal, AWS",
+      "url": "https://www.youtube.com/watch?v=0EnLxIbAvYk",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-11T22:00:35+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/0EnLxIbAvYk/hqdefault.jpg"
+    },
+    {
+      "id": "D_4Rn6uLdQM",
+      "title": "225,000 Lines of Tests, Written and Merged by Agents - Kush Agrawal, Duolingo",
+      "url": "https://www.youtube.com/watch?v=D_4Rn6uLdQM",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-11T21:00:23+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/D_4Rn6uLdQM/hqdefault.jpg"
+    },
+    {
+      "id": "oeknLUsN_GE",
+      "title": "Agents Made Code Free. Maintaining It Didn't Get Cheaper. - Dmitry Buykin, Maersk",
+      "url": "https://www.youtube.com/watch?v=oeknLUsN_GE",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-11T20:00:12+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/oeknLUsN_GE/hqdefault.jpg"
+    },
+    {
       "id": "TPo53fFYwYY",
       "title": "Qwen 4 27b: What to Expect from the next local LLM King?",
       "url": "https://www.youtube.com/watch?v=TPo53fFYwYY",
