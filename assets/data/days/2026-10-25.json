@@ -3,6 +3,24 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "TZMu0LhTG6k",
+      "title": "The Agent Has Left the Chat - Harald Kirschner, Microsoft",
+      "url": "https://www.youtube.com/watch?v=TZMu0LhTG6k",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-10-25T21:25:37+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/TZMu0LhTG6k/hqdefault.jpg"
+    },
+    {
+      "id": "0cBJ4X1LS1A",
+      "title": "Building an Agentic Eval Pipeline: Battle-Tested Lessons... - Kurtis Van Gent & Haoyu Wang, Google",
+      "url": "https://www.youtube.com/watch?v=0cBJ4X1LS1A",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-10-25T19:42:17+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/0cBJ4X1LS1A/hqdefault.jpg"
+    },
+    {
       "id": "f6OVURAlYXI",
       "title": "Cut The Noise: Building a Code Reviewer You Can Trust - Joah Gerstenberg, Block, Inc",
       "url": "https://www.youtube.com/watch?v=f6OVURAlYXI",
