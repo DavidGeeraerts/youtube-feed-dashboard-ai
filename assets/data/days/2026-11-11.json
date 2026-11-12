@@ -3,6 +3,15 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "vlfCjWuv4es",
+      "title": "Rethinking Claude Code Best Practices — Lydia Hallie, Anthropic",
+      "url": "https://www.youtube.com/watch?v=vlfCjWuv4es",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-12T03:26:55+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/vlfCjWuv4es/hqdefault.jpg"
+    },
+    {
       "id": "cWrYEBlWpcY",
       "title": "Stop Shipping LLM Settings That Only Win on Paper - Rohan Pandey & Balaji Varadarajan, DigitalOcean",
       "url": "https://www.youtube.com/watch?v=cWrYEBlWpcY",
