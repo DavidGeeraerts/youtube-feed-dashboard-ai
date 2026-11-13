@@ -3,6 +3,24 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "4pjeaeK4S9o",
+      "title": "Huang's Nvidia Legacy",
+      "url": "https://www.youtube.com/shorts/4pjeaeK4S9o",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-13T17:00:36+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/4pjeaeK4S9o/hqdefault.jpg"
+    },
+    {
+      "id": "wiMs92u-dk0",
+      "title": "Deepseek V4.1 Flash Runs With No GPU Just 64GB RAM",
+      "url": "https://www.youtube.com/watch?v=wiMs92u-dk0",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-13T15:30:24+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/wiMs92u-dk0/hqdefault.jpg"
+    },
+    {
       "id": "ixy-xP2gMnA",
       "title": "Don't Buy a Mac for AI Until You Watch This",
       "url": "https://www.youtube.com/watch?v=ixy-xP2gMnA",
