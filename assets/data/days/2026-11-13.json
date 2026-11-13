@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-13",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "ixy-xP2gMnA",
+      "title": "Don't Buy a Mac for AI Until You Watch This",
+      "url": "https://www.youtube.com/watch?v=ixy-xP2gMnA",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-13T10:30:28+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/ixy-xP2gMnA/hqdefault.jpg"
+    },
+    {
+      "id": "Az2aRR51fDU",
+      "title": "Jensen Huang exits NVIDIA & does Claude Fable 5.2 count as AGI?",
+      "url": "https://www.youtube.com/watch?v=Az2aRR51fDU",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-13T09:30:11+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/Az2aRR51fDU/hqdefault.jpg"
+    }
+  ]
+}
