@@ -1,6 +1,6 @@
 {
   "timezone": "America/Los_Angeles",
-  "generated_at": "2026-11-13T22:37:35+00:00",
+  "generated_at": "2026-11-14T02:35:39+00:00",
   "today": "2026-11-13",
   "source": "https://raw.githubusercontent.com/DavidGeeraerts/AI/main/chapters/_07.1-youtube-xml-feeds.qmd",
   "section_found": true,
@@ -9,91 +9,91 @@
       "name": "0xSero",
       "channel_id": "UCeNLqAes-kUMjWksPA6d-BA",
       "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCeNLqAes-kUMjWksPA6d-BA",
-      "feed_name": "0xSero",
-      "status": "ok",
-      "videos": 15,
-      "error": null
+      "feed_name": null,
+      "status": "error",
+      "videos": 0,
+      "error": "HTTP 404 after 5 attempts"
     },
     {
       "name": "Agent Zero",
       "channel_id": "UCm4Sy7W36u_ZFOZWX9cd07w",
       "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCm4Sy7W36u_ZFOZWX9cd07w",
-      "feed_name": "Agent Zero",
-      "status": "ok",
-      "videos": 15,
-      "error": null
+      "feed_name": null,
+      "status": "error",
+      "videos": 0,
+      "error": "HTTP 404 after 5 attempts"
     },
     {
       "name": "Agentic AI Foundation",
       "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
       "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCgkApalw5crKXOtr_mqtPQg",
-      "feed_name": "Agentic AI Foundation",
-      "status": "ok",
-      "videos": 15,
-      "error": null
+      "feed_name": null,
+      "status": "error",
+      "videos": 0,
+      "error": "HTTP 404 after 5 attempts"
     },
     {
       "name": "AI Engineer",
       "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
       "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLKPca3kwwd-B59HNr-_lvA",
-      "feed_name": "AI Engineer",
-      "status": "ok",
-      "videos": 15,
-      "error": null
+      "feed_name": null,
+      "status": "error",
+      "videos": 0,
+      "error": "HTTP 500 after 5 attempts"
     },
     {
       "name": "Andrej Karpathy",
       "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
       "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ",
-      "feed_name": "Andrej Karpathy",
-      "status": "ok",
-      "videos": 15,
-      "error": null
+      "feed_name": null,
+      "status": "error",
+      "videos": 0,
+      "error": "HTTP 404 after 5 attempts"
     },
     {
       "name": "Armin Ronacher",
       "channel_id": "UC-mexo-76-J1MlQM8NkWCYw",
       "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mexo-76-J1MlQM8NkWCYw",
-      "feed_name": "Armin Ronacher",
-      "status": "ok",
-      "videos": 15,
-      "error": null
+      "feed_name": null,
+      "status": "error",
+      "videos": 0,
+      "error": "HTTP 404 after 5 attempts"
     },
     {
       "name": "IBM Technology",
       "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
       "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKWaEZ-_VweaEx1j62do_vQ",
-      "feed_name": "IBM Technology",
-      "status": "ok",
-      "videos": 15,
-      "error": null
+      "feed_name": null,
+      "status": "error",
+      "videos": 0,
+      "error": "HTTP 404 after 5 attempts"
     },
     {
       "name": "Kai",
       "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
       "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCgUfJoPtkt7-RiiuYh4vmGA",
-      "feed_name": "Kai",
-      "status": "ok",
-      "videos": 15,
-      "error": null
+      "feed_name": null,
+      "status": "error",
+      "videos": 0,
+      "error": "HTTP 404 after 5 attempts"
     },
     {
       "name": "The Pragmatic Engineer",
       "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
       "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCPbwhExawYrn9xxI21TFfyw",
-      "feed_name": "The Pragmatic Engineer",
-      "status": "ok",
-      "videos": 15,
-      "error": null
+      "feed_name": null,
+      "status": "error",
+      "videos": 0,
+      "error": "HTTP 404 after 5 attempts"
     },
     {
       "name": "Julia Turc",
       "channel_id": "UCMUy_WsUIYbM_hKR9drb9dA",
       "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCMUy_WsUIYbM_hKR9drb9dA",
-      "feed_name": "Julia Turc",
-      "status": "ok",
-      "videos": 15,
-      "error": null
+      "feed_name": null,
+      "status": "error",
+      "videos": 0,
+      "error": "HTTP 404 after 5 attempts"
     }
   ],
   "days": [
