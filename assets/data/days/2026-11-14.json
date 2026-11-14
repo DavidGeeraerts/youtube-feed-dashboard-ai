@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-14",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "BFI2iykN0Yc",
+      "title": "“AI has eaten tactical programming”",
+      "url": "https://www.youtube.com/shorts/BFI2iykN0Yc",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-11-14T16:00:17+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/BFI2iykN0Yc/hqdefault.jpg"
+    },
+    {
+      "id": "oUsXv7ZoYQg",
+      "title": "54GB VRAM For $35 The Cheapest Local AI Hack?",
+      "url": "https://www.youtube.com/watch?v=oUsXv7ZoYQg",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-14T15:30:26+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/oUsXv7ZoYQg/hqdefault.jpg"
+    }
+  ]
+}
