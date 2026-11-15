@@ -1,6 +1,6 @@
 {
   "timezone": "America/Los_Angeles",
-  "generated_at": "2026-11-14T21:38:06+00:00",
+  "generated_at": "2026-11-15T02:02:16+00:00",
   "today": "2026-11-14",
   "source": "https://raw.githubusercontent.com/DavidGeeraerts/AI/main/chapters/_07.1-youtube-xml-feeds.qmd",
   "section_found": true,
@@ -48,7 +48,7 @@
       "feed_name": null,
       "status": "error",
       "videos": 0,
-      "error": "HTTP 500 after 5 attempts"
+      "error": "HTTP 404 after 5 attempts"
     },
     {
       "name": "Armin Ronacher",
@@ -93,7 +93,7 @@
       "feed_name": null,
       "status": "error",
       "videos": 0,
-      "error": "HTTP 500 after 5 attempts"
+      "error": "HTTP 404 after 5 attempts"
     }
   ],
   "days": [
