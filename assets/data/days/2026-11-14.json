@@ -3,6 +3,15 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "UCL4K36SHp0",
+      "title": "Let's Open Source the World — Brandon Thomas, ArtCraft",
+      "url": "https://www.youtube.com/watch?v=UCL4K36SHp0",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-15T03:44:38+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/UCL4K36SHp0/hqdefault.jpg"
+    },
+    {
       "id": "O_zcc6Xl12g",
       "title": "All Code Is Slop (Except Mine) — Lauren Tan, SpaceXSI",
       "url": "https://www.youtube.com/watch?v=O_zcc6Xl12g",
