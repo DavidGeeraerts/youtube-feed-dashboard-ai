@@ -8,7 +8,7 @@
 
 Daily dashboard of new videos from the YouTube channels listed in [Youtube Channels XML Feeds](https://github.com/DavidGeeraerts/AI/blob/main/chapters/_07.1-youtube-xml-feeds.qmd) (`chapters/_07.1-youtube-xml-feeds.qmd` in the Book of AI).
 
-Dates and publish times use **America/Los_Angeles**. The page opens on today in that time zone. **Yesterday** is one step back, and earlier days that have been stored can be opened with Previous day or the day menu.
+Dates and publish times use **America/Los_Angeles**. The page opens on today in that time zone. **Yesterday** is one step back, **Today** jumps back to the current day in that time zone, and earlier days that have been stored can be opened with Previous day or the day menu. Today is disabled while that day is already open. A day that has no JSON file yet, including today before the feed run, shows no videos for that date.
 
 The site is a [Jekyll](https://jekyllrb.com/) site deployed to GitHub Pages:
 

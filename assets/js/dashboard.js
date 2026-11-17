@@ -221,9 +221,14 @@
     document.title = formatLong(date) + " · YouTube feed";
     var prev = document.getElementById("prev-day");
     var next = document.getElementById("next-day");
-    prev.textContent = date === todayISO() ? "← Yesterday" : "← Previous day";
+    var todayBtn = document.getElementById("today-day");
+    var onToday = date === todayISO();
+    prev.textContent = onToday ? "← Yesterday" : "← Previous day";
     prev.disabled = !beside.older;
     next.disabled = !beside.newer;
+    todayBtn.disabled = onToday;
+    if (onToday) todayBtn.setAttribute("aria-current", "date");
+    else todayBtn.removeAttribute("aria-current");
     fillSelect(date);
   }
 
@@ -382,6 +387,9 @@
   function bind() {
     document.getElementById("prev-day").addEventListener("click", function () {
       step(-1);
+    });
+    document.getElementById("today-day").addEventListener("click", function () {
+      showDate(todayISO(), true);
     });
     document.getElementById("next-day").addEventListener("click", function () {
       step(1);

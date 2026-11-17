@@ -12,6 +12,16 @@ Entries use these categories, and versions are ordered newest to oldest:
 - `Security` in case of vulnerabilities.
 - `Deprecated` for soon-to-be removed features.
 
+## [0.2.0] - 2026-11-17
+
+### Added
+
+- A Today button between Previous day and Next day. It opens today in America/Los_Angeles, using the same loader as the other day controls. A day file that is not published yet stays an empty day, the same as any other missing day. The button is disabled while today is already open.
+
+### Changed
+
+- Previous day, Today, and Next day stay on one row, including on narrow screens. The date heading sits beside that row on wide screens and above it on narrow screens.
+
 ## [0.1.5] - 2026-11-10
 
 ### Changed
