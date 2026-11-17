@@ -11,26 +11,26 @@ classes:
 
 <div id="dashboard" data-baseurl="{{ site.baseurl }}" data-timezone="America/Los_Angeles">
   <div class="dashboard-toolbar">
-    <div class="dashboard-nav">
-      <div class="dashboard-current">
+    <div class="dashboard-day">
+      <div class="dashboard-day-top">
         <p id="day-kicker" class="dashboard-kicker">Today</p>
-        <h2 id="current-date">Loading…</h2>
+        <div class="dashboard-appearance" role="group" aria-label="Appearance">
+          <button type="button" class="btn btn--light-outline" data-theme="system">System</button>
+          <button type="button" class="btn btn--light-outline" data-theme="light">Light</button>
+          <button type="button" class="btn btn--light-outline" data-theme="dark">Dark</button>
+        </div>
       </div>
       <div class="dashboard-nav-buttons" role="group" aria-label="Choose a day">
         <button type="button" class="btn btn--primary" id="prev-day">← Yesterday</button>
         <button type="button" class="btn btn--primary" id="today-day" disabled aria-current="date">Today</button>
         <button type="button" class="btn btn--primary" id="next-day">Next day →</button>
       </div>
+      <h2 id="current-date">Loading…</h2>
     </div>
     <div class="dashboard-tools">
       <label class="dashboard-field" for="day-jump">Stored days
         <select id="day-jump"></select>
       </label>
-      <div class="dashboard-appearance" role="group" aria-label="Appearance">
-        <button type="button" class="btn btn--light-outline" data-theme="system">System</button>
-        <button type="button" class="btn btn--light-outline" data-theme="light">Light</button>
-        <button type="button" class="btn btn--light-outline" data-theme="dark">Dark</button>
-      </div>
     </div>
   </div>
 
