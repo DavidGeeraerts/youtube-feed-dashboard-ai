@@ -12,6 +12,12 @@ Entries use these categories, and versions are ordered newest to oldest:
 - `Security` in case of vulnerabilities.
 - `Deprecated` for soon-to-be removed features.
 
+## [0.2.1] - 2026-11-17
+
+### Changed
+
+- Day buttons sit under the day label and above the date. System, Light, and Dark sit on the top right of that header and scale with the window.
+
 ## [0.2.0] - 2026-11-17
 
 ### Added
