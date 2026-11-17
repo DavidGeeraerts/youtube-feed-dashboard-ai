@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-10",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "iK9gmxXyBR0",
+      "title": "Pick Problems That Survive When AI Solves Coding - Ara Khan, Cline",
+      "url": "https://www.youtube.com/watch?v=iK9gmxXyBR0",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-11T00:00:32+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/iK9gmxXyBR0/hqdefault.jpg"
+    },
+    {
+      "id": "hFNbPmzzcEs",
+      "title": "Your Agent Doesn't Need an LLM for Every Decision - Raymond Weitekamp, OpenProse",
+      "url": "https://www.youtube.com/watch?v=hFNbPmzzcEs",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T23:00:07+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/hFNbPmzzcEs/hqdefault.jpg"
+    },
+    {
+      "id": "DxP5aW4VknQ",
+      "title": "Your Sub-Agents Are a Distributed System. Treat Them Like One. - Girish Konda, Microsoft",
+      "url": "https://www.youtube.com/watch?v=DxP5aW4VknQ",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T22:00:07+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/DxP5aW4VknQ/hqdefault.jpg"
+    },
+    {
+      "id": "fTUinMqA1XQ",
+      "title": "Your Team's Agents Are All Shipping to the Same Code at Once - Patrick Debois, Tessl",
+      "url": "https://www.youtube.com/watch?v=fTUinMqA1XQ",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T21:00:02+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/fTUinMqA1XQ/hqdefault.jpg"
+    },
+    {
+      "id": "3Krz7Rdd4JI",
+      "title": "Every Company Is Building Agents That Can't Work Together - Justin Schroeder, Standard Agents",
+      "url": "https://www.youtube.com/watch?v=3Krz7Rdd4JI",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T20:00:31+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/3Krz7Rdd4JI/hqdefault.jpg"
+    },
+    {
+      "id": "LDMzI0jGDb0",
+      "title": "The Key to Creating GREAT OpenAI Plugins- Thomas Sarlandie, OpenAI",
+      "url": "https://www.youtube.com/watch?v=LDMzI0jGDb0",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-11-10T18:37:52+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/LDMzI0jGDb0/hqdefault.jpg"
+    },
+    {
+      "id": "gbeuC0ud1p4",
+      "title": "Your PR Says the Tests Passed. Prove It. - Stephen Chin & Cassandra Chin",
+      "url": "https://www.youtube.com/watch?v=gbeuC0ud1p4",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T17:57:21+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/gbeuC0ud1p4/hqdefault.jpg"
+    },
+    {
+      "id": "vg3JdjGuJwM",
+      "title": "Every Correction You Give Your Agent Is Data - Brian Douglas, Paper Compute",
+      "url": "https://www.youtube.com/watch?v=vg3JdjGuJwM",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T17:57:20+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/vg3JdjGuJwM/hqdefault.jpg"
+    },
+    {
+      "id": "rS36lYuvXQ8",
+      "title": "Your Agent Hates Your CLI - Ayush Bhardwaj, Allos AI",
+      "url": "https://www.youtube.com/watch?v=rS36lYuvXQ8",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T17:57:20+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/rS36lYuvXQ8/hqdefault.jpg"
+    },
+    {
+      "id": "_NBx2NNOuA4",
+      "title": "Give Your On-Call Its Own AI Teammate - Swaapnika Motapothula, Chinmay Gandhi & Vlad Tsvang, Meta",
+      "url": "https://www.youtube.com/watch?v=_NBx2NNOuA4",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T17:57:20+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/_NBx2NNOuA4/hqdefault.jpg"
+    },
+    {
+      "id": "_7P580m4kPY",
+      "title": "You Can't Tell What an Agent Skill Will Do by Reading It - Roey Ben Chaim, Zenity",
+      "url": "https://www.youtube.com/watch?v=_7P580m4kPY",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T17:57:20+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/_7P580m4kPY/hqdefault.jpg"
+    },
+    {
+      "id": "TlOAhw9t5DA",
+      "title": "Merge Is the Bottleneck - Prasanna Sankar, Vorflux",
+      "url": "https://www.youtube.com/watch?v=TlOAhw9t5DA",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-10T17:57:20+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/TlOAhw9t5DA/hqdefault.jpg"
+    },
+    {
+      "id": "LDcRdpVvmgQ",
+      "title": "The value of AI is not doing the same thing faster",
+      "url": "https://www.youtube.com/shorts/LDcRdpVvmgQ",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-11-10T16:00:02+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/LDcRdpVvmgQ/hqdefault.jpg"
+    },
+    {
+      "id": "XK_hz11tmuc",
+      "title": "NVIDIA's 4B Model That Re-Runs Its Own Layers",
+      "url": "https://www.youtube.com/watch?v=XK_hz11tmuc",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-10T15:30:06+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/XK_hz11tmuc/hqdefault.jpg"
+    },
+    {
+      "id": "OrXKvOjR-vI",
+      "title": "Software correctness and programming languages with Sean Allen",
+      "url": "https://www.youtube.com/watch?v=OrXKvOjR-vI",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-11-10T14:23:48+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/OrXKvOjR-vI/hqdefault.jpg"
+    },
+    {
+      "id": "4uvq8Cz3A7Y",
+      "title": "What Is Model Distillation? How Smaller AI Models Learn",
+      "url": "https://www.youtube.com/watch?v=4uvq8Cz3A7Y",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-10T12:00:24+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/4uvq8Cz3A7Y/hqdefault.jpg"
+    }
+  ]
+}

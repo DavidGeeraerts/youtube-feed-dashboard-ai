@@ -1,12 +1,11 @@
 name: Update dashboard
 
 # GitHub schedules are UTC and can start later than the clock time.
-# 03:30, 15:30, 19:30, and 23:30 UTC land in the Pacific morning, midday,
-# afternoon, and evening (about 7:30am, 11:30am, 3:30pm, and 7:30pm PST,
-# or one hour later during PDT).
+# Minute 30 avoids the top-of-hour rush. In Pacific time that is about
+# 30 minutes past each hour (PST), or one hour later during PDT.
 on:
   schedule:
-    - cron: "30 3,15,19,23 * * *"
+    - cron: "30 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -14,6 +13,10 @@ permissions:
   pages: write
   id-token: write
 
+# One run at a time. cancel-in-progress stays false so a run that is inside
+# the feed retry backoff, or pushing data, is not aborted when the next hour
+# starts. A second run waits. GitHub keeps only the latest pending run in
+# this group, so hourly ticks do not pile up.
 concurrency:
   group: youtube-dashboard
   cancel-in-progress: false
@@ -24,39 +27,59 @@ jobs:
     timeout-minutes: 20
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
       - name: Test feed parser
-        run: python -m unittest discover -s tests -v
+        run: |
+          python -m unittest discover -s tests -v
+          bash tests/test_publish_feed_data.sh
 
+      - name: Use the latest branch tip
+        run: |
+          git fetch origin "${GITHUB_REF_NAME}"
+          git checkout -B "${GITHUB_REF_NAME}" "origin/${GITHUB_REF_NAME}"
+
+      # Exits 0 when some or all channel feeds fail, after logging which
+      # ones and why, so this step still commits and publishes the rest.
+      # Exits 1 only when the channel list page itself cannot be read.
       - name: Fetch YouTube feeds
+        env:
+          PYTHONUNBUFFERED: "1"
         run: python scripts/fetch_feeds.py
 
       - name: Commit feed data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/data
-          if git diff --staged --quiet; then
-            echo "No data changes to commit."
-          else
-            git commit -m "Update YouTube feed data"
-            git push origin "HEAD:${GITHUB_REF_NAME}"
-          fi
+        id: feed
+        run: bash scripts/publish_feed_data.sh "${GITHUB_REF_NAME}"
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        id: pages
+        uses: actions/configure-pages@v6
+
+      # Build with this repo's Gemfile. actions/jekyll-build-pages ships
+      # github-pages 232 and warns when the Gemfile resolves to a newer gem.
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
 
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+          JEKYLL_GITHUB_TOKEN: ${{ github.token }}
+          JEKYLL_BUILD_REVISION: ${{ steps.feed.outputs.sha }}
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
 
   deploy:
     needs: build
@@ -67,4 +90,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

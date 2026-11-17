@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-14",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "UCL4K36SHp0",
+      "title": "Let's Open Source the World — Brandon Thomas, ArtCraft",
+      "url": "https://www.youtube.com/watch?v=UCL4K36SHp0",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-15T03:44:38+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/UCL4K36SHp0/hqdefault.jpg"
+    },
+    {
+      "id": "O_zcc6Xl12g",
+      "title": "All Code Is Slop (Except Mine) — Lauren Tan, SpaceXSI",
+      "url": "https://www.youtube.com/watch?v=O_zcc6Xl12g",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-14T18:30:09+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/O_zcc6Xl12g/hqdefault.jpg"
+    },
+    {
+      "id": "BFI2iykN0Yc",
+      "title": "“AI has eaten tactical programming”",
+      "url": "https://www.youtube.com/shorts/BFI2iykN0Yc",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-11-14T16:00:17+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/BFI2iykN0Yc/hqdefault.jpg"
+    },
+    {
+      "id": "oUsXv7ZoYQg",
+      "title": "54GB VRAM For $35 The Cheapest Local AI Hack?",
+      "url": "https://www.youtube.com/watch?v=oUsXv7ZoYQg",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-14T15:30:26+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/oUsXv7ZoYQg/hqdefault.jpg"
+    }
+  ]
+}

@@ -11,13 +11,16 @@ classes:
 
 <div id="dashboard" data-baseurl="{{ site.baseurl }}" data-timezone="America/Los_Angeles">
   <div class="dashboard-toolbar">
-    <div class="dashboard-nav" role="group" aria-label="Choose a day">
-      <button type="button" class="btn btn--primary" id="prev-day">← Yesterday</button>
+    <div class="dashboard-nav">
       <div class="dashboard-current">
         <p id="day-kicker" class="dashboard-kicker">Today</p>
         <h2 id="current-date">Loading…</h2>
       </div>
-      <button type="button" class="btn btn--primary" id="next-day">Next day →</button>
+      <div class="dashboard-nav-buttons" role="group" aria-label="Choose a day">
+        <button type="button" class="btn btn--primary" id="prev-day">← Yesterday</button>
+        <button type="button" class="btn btn--primary" id="today-day" disabled aria-current="date">Today</button>
+        <button type="button" class="btn btn--primary" id="next-day">Next day →</button>
+      </div>
     </div>
     <div class="dashboard-tools">
       <label class="dashboard-field" for="day-jump">Stored days
@@ -35,7 +38,7 @@ classes:
   <div id="video-grid"></div>
   <div id="dashboard-message"></div>
   <p id="updated-at" class="dashboard-updated"></p>
-  <p class="dashboard-source">Channel list: <a href="https://davidgeeraerts.github.io/AI/chapters/07-resources.html#youtube-channels-xml-feeds">Youtube Channels XML Feeds</a>.</p>
+  <p class="dashboard-source">Channel list: <a href="https://github.com/DavidGeeraerts/AI/blob/main/chapters/_07.1-youtube-xml-feeds.qmd">Youtube Channels XML Feeds</a>.</p>
 
   <details id="channel-health" class="dashboard-health">
     <summary id="channel-summary">Channel feeds</summary>
