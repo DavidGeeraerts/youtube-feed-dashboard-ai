@@ -3,6 +3,42 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "BwijQwOVe2E",
+      "title": "What Can Agent Zero’s Open UI Actually Do?",
+      "url": "https://www.youtube.com/watch?v=BwijQwOVe2E",
+      "channel": "Agent Zero",
+      "channel_id": "UCm4Sy7W36u_ZFOZWX9cd07w",
+      "published": "2026-11-17T16:12:50+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/BwijQwOVe2E/hqdefault.jpg"
+    },
+    {
+      "id": "dXgQ6dO30zA",
+      "title": "I ran Qwen3.8 27B on $78 Card! (Better than expected)",
+      "url": "https://www.youtube.com/watch?v=dXgQ6dO30zA",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-17T15:30:32+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/dXgQ6dO30zA/hqdefault.jpg"
+    },
+    {
+      "id": "1kP4dQtUT50",
+      "title": "Stop Vibe-Testing: Run Real Agent Evals - Laurie Voss, Arize AI",
+      "url": "https://www.youtube.com/watch?v=1kP4dQtUT50",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-11-17T15:00:17+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/1kP4dQtUT50/hqdefault.jpg"
+    },
+    {
+      "id": "YFEYYCQIR9A",
+      "title": "Why the CS curriculum needs “burning down”",
+      "url": "https://www.youtube.com/shorts/YFEYYCQIR9A",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-11-17T14:30:03+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/YFEYYCQIR9A/hqdefault.jpg"
+    },
+    {
       "id": "0MvcuIrects",
       "title": "Is AI Really Superintelligence? ANI, AGI & ASI Explained",
       "url": "https://www.youtube.com/watch?v=0MvcuIrects",
