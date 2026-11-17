@@ -1,7 +1,7 @@
 title: YouTube feed
 description: >-
-  Daily dashboard of new videos from selected YouTube channels.
-  Today and publish times use America/Los_Angeles.
+  Daily dashboard of new videos from selected YouTube channels covering agentic engineering.
+  (Today and publish times use America/Los_Angeles.)
 url: https://davidgeeraerts.github.io
 baseurl: /youtube-feed-dashboard-ai
 repository: DavidGeeraerts/youtube-feed-dashboard-ai
@@ -22,7 +22,7 @@ search: false
 author_profile: false
 author:
   name: David Geeraerts
-  url: https://davidgeeraerts.github.io/AI/
+  url: https://davidgeeraerts.github.io/youtube-feed-dashboard-ai/
 
 footer:
   links:
