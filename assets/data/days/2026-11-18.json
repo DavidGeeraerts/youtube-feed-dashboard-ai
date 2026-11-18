@@ -3,6 +3,42 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "4Cjb7691GJ8",
+      "title": "Software factories and code reviews with Harjot Gill",
+      "url": "https://www.youtube.com/watch?v=4Cjb7691GJ8",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-11-18T18:03:02+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/4Cjb7691GJ8/hqdefault.jpg"
+    },
+    {
+      "id": "6ZtSLtqdBlQ",
+      "title": "Treat AI agents like an insider risk",
+      "url": "https://www.youtube.com/shorts/6ZtSLtqdBlQ",
+      "channel": "The Pragmatic Engineer",
+      "channel_id": "UCPbwhExawYrn9xxI21TFfyw",
+      "published": "2026-11-18T17:11:37+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/6ZtSLtqdBlQ/hqdefault.jpg"
+    },
+    {
+      "id": "w9VqhLZhRks",
+      "title": "Preparing for Service Outages",
+      "url": "https://www.youtube.com/shorts/w9VqhLZhRks",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-18T17:00:25+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/w9VqhLZhRks/hqdefault.jpg"
+    },
+    {
+      "id": "wC6jsOU4jII",
+      "title": "Basalt Runs Qwen 3.8 Flash Next At 224 Token/sec",
+      "url": "https://www.youtube.com/watch?v=wC6jsOU4jII",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-18T15:30:09+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/wC6jsOU4jII/hqdefault.jpg"
+    },
+    {
       "id": "U92J5mCDLMc",
       "title": "40x More Merged PRs With 2.7x the Engineers — Walden Yan, Cognition",
       "url": "https://www.youtube.com/watch?v=U92J5mCDLMc",
