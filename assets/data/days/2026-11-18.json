@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-18",
+  "timezone": "America/Los_Angeles",
+  "videos": [
+    {
+      "id": "U92J5mCDLMc",
+      "title": "40x More Merged PRs With 2.7x the Engineers — Walden Yan, Cognition",
+      "url": "https://www.youtube.com/watch?v=U92J5mCDLMc",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-18T14:00:01+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/U92J5mCDLMc/hqdefault.jpg"
+    },
+    {
+      "id": "Bn8DhYpy-qI",
+      "title": "Grok Build leaks apps and Outlook goes dark worldwide",
+      "url": "https://www.youtube.com/watch?v=Bn8DhYpy-qI",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-18T09:30:38+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/Bn8DhYpy-qI/hqdefault.jpg"
+    }
+  ]
+}
