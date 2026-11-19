@@ -3,6 +3,42 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "aRFozqX4Adw",
+      "title": "The Context ft. MCPJam",
+      "url": "https://www.youtube.com/watch?v=aRFozqX4Adw",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-11-19T17:54:26+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/aRFozqX4Adw/hqdefault.jpg"
+    },
+    {
+      "id": "shAxoFnjtRI",
+      "title": "I Checked What Claude & ChatGPT. Are Really Sending Over the Network",
+      "url": "https://www.youtube.com/watch?v=shAxoFnjtRI",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-19T15:30:15+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/shAxoFnjtRI/hqdefault.jpg"
+    },
+    {
+      "id": "OOXETYR3MWU",
+      "title": "We Built AI Agents To Fix Security Findings in Production",
+      "url": "https://www.youtube.com/watch?v=OOXETYR3MWU",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-11-19T15:00:19+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/OOXETYR3MWU/hqdefault.jpg"
+    },
+    {
+      "id": "pZWPq_ZAmM4",
+      "title": "What it takes to set intelligence free — Fabian Hedin, CTO, Lovable",
+      "url": "https://www.youtube.com/watch?v=pZWPq_ZAmM4",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-19T14:00:14+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/pZWPq_ZAmM4/hqdefault.jpg"
+    },
+    {
       "id": "4LINhsEZEDI",
       "title": "4 Types of AI Agent Loops: From Human-Led to Autonomous",
       "url": "https://www.youtube.com/watch?v=4LINhsEZEDI",
