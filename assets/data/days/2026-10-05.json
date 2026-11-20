@@ -3,6 +3,15 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "BOlf10RUB4s",
+      "title": "20 Nov - MCP Dev Summit Nairobi 2026 Livestream",
+      "url": "https://www.youtube.com/watch?v=BOlf10RUB4s",
+      "channel": "Agentic AI Foundation",
+      "channel_id": "UCgkApalw5crKXOtr_mqtPQg",
+      "published": "2026-10-05T18:39:21+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/BOlf10RUB4s/hqdefault.jpg"
+    },
+    {
       "id": "c9l0CYY1v6w",
       "title": "AI Agent Tierlist",
       "url": "https://www.youtube.com/watch?v=c9l0CYY1v6w",
