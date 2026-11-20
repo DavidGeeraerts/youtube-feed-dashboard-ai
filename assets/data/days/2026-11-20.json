@@ -3,6 +3,15 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "MDI81OaZAD4",
+      "title": "How to build an agent that builds the culture — Zach Bruggeman, Ramp",
+      "url": "https://www.youtube.com/watch?v=MDI81OaZAD4",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-20T20:00:36+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/MDI81OaZAD4/hqdefault.jpg"
+    },
+    {
       "id": "0LeT996Hz3E",
       "title": "Engineer Your Coding Agents Like Any Other System — Zach Lloyd, Warp",
       "url": "https://www.youtube.com/watch?v=0LeT996Hz3E",
