@@ -3,6 +3,33 @@
   "timezone": "America/Los_Angeles",
   "videos": [
     {
+      "id": "0LeT996Hz3E",
+      "title": "Engineer Your Coding Agents Like Any Other System — Zach Lloyd, Warp",
+      "url": "https://www.youtube.com/watch?v=0LeT996Hz3E",
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "published": "2026-11-20T18:30:06+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/0LeT996Hz3E/hqdefault.jpg"
+    },
+    {
+      "id": "hWQjNS8iP7M",
+      "title": "Drug Design's Hidden Challenge",
+      "url": "https://www.youtube.com/shorts/hWQjNS8iP7M",
+      "channel": "IBM Technology",
+      "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+      "published": "2026-11-20T17:00:35+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/hWQjNS8iP7M/hqdefault.jpg"
+    },
+    {
+      "id": "NqNGIuhxOQg",
+      "title": "LLM Quantization Explained! Which AI Model Should You Download?",
+      "url": "https://www.youtube.com/watch?v=NqNGIuhxOQg",
+      "channel": "Kai",
+      "channel_id": "UCgUfJoPtkt7-RiiuYh4vmGA",
+      "published": "2026-11-20T15:30:29+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/NqNGIuhxOQg/hqdefault.jpg"
+    },
+    {
       "id": "Y6npte_lEKU",
       "title": "Anthropic goes public, ChatGPT gets a wallet & AI designs new drugs",
       "url": "https://www.youtube.com/watch?v=Y6npte_lEKU",
