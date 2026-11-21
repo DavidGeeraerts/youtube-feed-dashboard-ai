@@ -1,7 +1,7 @@
 {
   "timezone": "America/Los_Angeles",
-  "generated_at": "2026-11-21T02:40:33+00:00",
-  "today": "2026-11-20",
+  "generated_at": "2026-11-21T11:33:28+00:00",
+  "today": "2026-11-21",
   "source": "https://raw.githubusercontent.com/DavidGeeraerts/AI/main/chapters/_07.1-youtube-xml-feeds.qmd",
   "section_found": true,
   "channels": [
@@ -97,6 +97,7 @@
     }
   ],
   "days": [
+    "2026-11-21",
     "2026-11-20",
     "2026-11-19",
     "2026-11-18",
